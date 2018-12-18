@@ -4,7 +4,7 @@
 
 <hr>
 
-**Installation Command :**
+**Installation**
 ```  
 pip install dominance-analysis
 ```  
