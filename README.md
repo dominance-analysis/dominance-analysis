@@ -1,4 +1,4 @@
-# Dominance Analysis Package
+# Dominance Analysis for accurate and intuitive Relative Importance of Predictors
 
 *This package is designed for regression task where-in provided with a dataset and continous target variable, the package returns the Incremental R-Square that any variable will add to total R-Square of the model. As the complexity of the algorithm increases with number of features, we have in-built functionality that chooses the <b>K=15</b> best features from all the estimators and returns incremental R-Square each variable all to the total R-Square of the model.*
 
