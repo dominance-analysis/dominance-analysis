@@ -36,3 +36,10 @@ dominance.plot_incremental_rsquare()
 <hr>
 <img src='Pie.png'>
 <hr>
+
+
+**Dominance Statistics (R-Square)**
+```
+dominance.domiance_stats()
+```
+<img src='dominance_stats.JPG'>
