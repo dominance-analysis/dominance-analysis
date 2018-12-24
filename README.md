@@ -58,14 +58,14 @@ Logistic regression models are fitted using the method of maximum likelihood - i
 
 Nagelkerke Pseudo-R squared measure is defined as :
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Nagelkerke}^{2}=\frac{1-\{\frac{log(L_{null})}{log(L_{full})}\}^{2/N}}{1-L_{null}^{2/N}}" title="\Large R_{Nagelkerke}^{2}=\frac{1-\{\frac{log(L_{null})}{log(L_{full})}\}^{2/N}}{1-L_{null}^{2/N}}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Nagelkerke}^{2}=\frac{1-\{\frac{L_{null}}{L_{full}}\}^{2/N}}{1-L_{null}^{2/N}}" title="\Large R_{Nagelkerke}^{2}=\frac{1-\{\frac{L_{null}}{L_{full}}\}^{2/N}}{1-L_{null}^{2/N}}" />
 
 
 **3. Cox and Snell R-Square**
 
 Cox and Snell Pseudo-R squared measure is defined as :
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Cox\&Snell}^{2}=1-[\frac{log(L_{null})}{log(L_{full})}]^{2/N}" title="\Large R_{Cox\&Snell}^{2}=1-\{\frac{log(L_{null})}{log(L_{full})}\}^{2/N}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Cox\&Snell}^{2}=1-[\frac{L_{null}}{L_{full}}]^{2/N}" title="\Large R_{Cox\&Snell}^{2}=1-\{\frac{L_{null}}{L_{full}}\}^{2/N}" />
 
 **4. Estrella R-Square**
 
