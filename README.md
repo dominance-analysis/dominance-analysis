@@ -65,7 +65,7 @@ Nagelkerke Pseudo-R squared measure is defined as :
 
 Cox and Snell Pseudo-R squared measure is defined as :
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Cox\&Snell}^{2}=1-[\frac{L_{null}}{L_{full}}]^{2/N}" title="\Large R_{Cox\&Snell}^{2}=1-\{\frac{L_{null}}{L_{full}}\}^{2/N}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Cox\&Snell}^{2}=1-\{\frac{L_{null}}{L_{full}}\}^{2/N}" title="\Large R_{Cox\&Snell}^{2}=1-\{\frac{L_{null}}{L_{full}}\}^{2/N}" />
 
 **4. Estrella R-Square**
 
