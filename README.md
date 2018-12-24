@@ -53,7 +53,6 @@ Logistic regression models are fitted using the method of maximum likelihood - i
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{McFadden}^{2}=1-\frac{log(L_{full})}{log(L_{null})}" title="\Large R_{McFadden}^{2}=1-\frac{log(L_{full})}{log(L_{null})}" />
 
-where $L_{full}$ denotes the (maximized) likelihood value from the current fitted model, and $L_{null}$ denotes the corresponding value but for the null model - the model with only an intercept and no covariates.
 
 **2. Nagelkerke Pseudo-R Square**
 
@@ -73,6 +72,4 @@ Cox and Snell Pseudo-R squared measure is defined as :
 Estrella Pseudo-R squared measure is defined as :
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Estrella}^{2}=1-\{\frac{LL_{full}}{LL_{null}}\}^{\frac{2}{N}*LL_{null}}" title="\Large R_{Estrella}^{2}=1-\}\frac{LL_{full}}{LL_{null}}\}^{\frac{2}{N}*LL_{null}}" />
-
-
 
