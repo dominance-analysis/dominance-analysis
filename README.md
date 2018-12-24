@@ -50,14 +50,23 @@ dominance.domiance_stats()
 
 Logistic regression models are fitted using the method of maximum likelihood - i.e. the parameter estimates are those values which maximize the likelihood of the data which have been observed. McFadden's R squared measure is defined as
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{McFadden}^{2}=1-\frac{log(L_c)}{log(L_{null})}" title="\Large R_{McFadden}^{2}=1-\frac{log(L_c)}{log(L_{null})}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{McFadden}^{2}=1-\frac{log(L_{full})}{log(L_{null})}" title="\Large R_{McFadden}^{2}=1-\frac{log(L_{full})}{log(L_{null})}" />
 
-where $L_c$ denotes the (maximized) likelihood value from the current fitted model, and $L_{null}$ denotes the corresponding value but for the null model - the model with only an intercept and no covariates.
+where $L_{full}$ denotes the (maximized) likelihood value from the current fitted model, and $L_{null}$ denotes the corresponding value but for the null model - the model with only an intercept and no covariates.
 
 **2. Nagelkerke Pseudo-R Square**
 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Nagelkerke}^{2}=\frac{1-\{\frac{log(L_{null})}{log(L_{full})}\}^{2/N}}{1-L_{null}^{2/N}}" title="\Large R_{Nagelkerke}^{2}=\frac{1-\{\frac{log(L_{null})}{log(L_{full})}\}^{2/N}}{1-L_{null}^{2/N}}" />
+
+
+
 **3. Cox and Snell R-Square**
 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Cox\&Snell}^{2}=1-[\frac{log(L_{null})}{log(L_{full})}]^{2/N}" title="\Large R_{Cox\&Snell}^{2}=1-[\frac{log(L_{null})}{log(L_{full})}]^{2/N}" />
+
 **4. Estrella R-Square**
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Estrella}^{2}=1-[\frac{LL_full}{LL_{null}}]^{\frac{2}{N}*LL_{null}}" title="\Large R_{Estrella}^{2}=1-[\frac{LL_full}{LL_{null}}]^{\frac{2}{N}*LL_{null}}" />
+
 
 
