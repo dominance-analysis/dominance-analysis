@@ -62,11 +62,11 @@ where $L_{full}$ denotes the (maximized) likelihood value from the current fitte
 
 **3. Cox and Snell R-Square**
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Cox\&Snell}^{2}=1-[\frac{log(L_{null})}{log(L_{full})}]^{2/N}" title="\Large R_{Cox\&Snell}^{2}=1-[\frac{log(L_{null})}{log(L_{full})}]^{2/N}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Cox\&Snell}^{2}=1-[\frac{log(L_{null})}{log(L_{full})}]^{2/N}" title="\Large R_{Cox\&Snell}^{2}=1-\{\frac{log(L_{null})}{log(L_{full})}\}^{2/N}" />
 
 **4. Estrella R-Square**
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Estrella}^{2}=1-[\frac{LL_full}{LL_{null}}]^{\frac{2}{N}*LL_{null}}" title="\Large R_{Estrella}^{2}=1-[\frac{LL_full}{LL_{null}}]^{\frac{2}{N}*LL_{null}}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Estrella}^{2}=1-\{\frac{LL_{full}}{LL_{null}}\}^{\frac{2}{N}*LL_{null}}" title="\Large R_{Estrella}^{2}=1-\}\frac{LL_{full}}{LL_{null}}\}^{\frac{2}{N}*LL_{null}}" />
 
 
 
