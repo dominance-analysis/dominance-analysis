@@ -50,7 +50,7 @@ dominance.domiance_stats()
 
 Logistic regression models are fitted using the method of maximum likelihood - i.e. the parameter estimates are those values which maximize the likelihood of the data which have been observed. McFadden's R squared measure is defined as
 
-$$R_{McFadden}^{2} = 1- \frac{log(L_c)}{log(L_{null})}$$
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{McFadden}^{2}=1-\frac{log(L_c)}{log(L_{null})}" title="\Large R_{McFadden}^{2}=1-\frac{log(L_c)}{log(L_{null})}" />
 
 where $L_c$ denotes the (maximized) likelihood value from the current fitted model, and $L_{null}$ denotes the corresponding value but for the null model - the model with only an intercept and no covariates.
 
