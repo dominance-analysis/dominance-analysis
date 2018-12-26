@@ -98,3 +98,28 @@ dominance_classification=Dominance(data=data,target='Y',top_k=4,objective=0,pseu
 <img src='Classification Domiance.JPG'>
 
 <hr>
+
+**Incremental Pseudo R-Square**
+```
+incr_variable_rsquare=dominance_classification.incremental_rsquare()
+```
+<img src='Model Training.JPG'>
+
+<hr>
+
+**Plot Incremental Pseudo R-Square**
+```
+dominance_classification.plot_incremental_rsquare()
+```
+<img src='Bar.png'>
+<hr>
+<img src='Pie.png'>
+<hr>
+
+
+**Dominance Statistics (R-Square)**
+```
+dominance_classification.domiance_stats()
+```
+<img src='dominance_stats_reg.JPG'>
+
