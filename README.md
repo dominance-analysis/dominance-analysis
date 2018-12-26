@@ -111,9 +111,9 @@ incr_variable_rsquare=dominance_classification.incremental_rsquare()
 ```
 dominance_classification.plot_incremental_rsquare()
 ```
-<img src='Bar.png'>
+<img src='Bar_Classification.png'>
 <hr>
-<img src='Pie.png'>
+<img src='Pie_Regression.png'>
 <hr>
 
 
@@ -121,5 +121,5 @@ dominance_classification.plot_incremental_rsquare()
 ```
 dominance_classification.domiance_stats()
 ```
-<img src='dominance_stats_reg.JPG'>
+<img src='dominance_stats_classification.JPG'>
 
