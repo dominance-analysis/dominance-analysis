@@ -113,7 +113,7 @@ dominance_classification.plot_incremental_rsquare()
 ```
 <img src='Bar_Classification.png'>
 <hr>
-<img src='Pie_Regression.png'>
+<img src='Pie_Classification.png'>
 <hr>
 
 
