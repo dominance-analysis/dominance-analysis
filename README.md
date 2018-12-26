@@ -56,7 +56,7 @@ import pandas as pd
 data=pd.read_excel("./Book2.xlsx")                           # file is available in data folder 
 dominance=Dominance(data=data,target='Y',top_k=10,objective=1)
 ``` 
-<img src='Regression Domiance.JPG' style="max-width: 75%;">
+<img src='Regression Domiance.JPG'>
 
 <hr>
 
@@ -84,3 +84,17 @@ dominance.domiance_stats()
 ```
 <img src='dominance_stats.JPG'>
 
+
+<hr>
+
+
+**User Guide for Classification Task**
+```
+from dominance_analysis import Dominance
+import pandas as pd
+data=pd.read_excel("./Dominance_Classification_Task_Data.xlsx")                           # file is available in data folder 
+dominance=Dominance(data=data,target='Y',top_k=4,objective=0,pseudo_r2="MacFadden's R-Square")
+``` 
+<img src='Classification Domiance.JPG'>
+
+<hr>
