@@ -82,7 +82,7 @@ dominance.plot_incremental_rsquare()
 ```
 dominance.domiance_stats()
 ```
-<img src='dominance_stats.JPG'>
+<img src='dominance_stats_reg.JPG'>
 
 
 <hr>
