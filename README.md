@@ -103,7 +103,7 @@ dominance_classification=Dominance(data=data,target='Y',top_k=4,objective=0,pseu
 ```
 incr_variable_rsquare=dominance_classification.incremental_rsquare()
 ```
-<img src='Model Training.JPG'>
+<img src='Incremental_Pseudo_RSquare_Classification.JPG'>
 
 <hr>
 
