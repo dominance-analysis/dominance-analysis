@@ -56,7 +56,7 @@ import pandas as pd
 data=pd.read_excel("./Book2.xlsx")                           # file is available in data folder 
 dominance=Dominance(data=data,target='Y',top_k=10,objective=1)
 ``` 
-<img src='Regression Domiance.JPG'>
+<img src='images/Regression Domiance.JPG'>
 
 <hr>
 
@@ -64,7 +64,7 @@ dominance=Dominance(data=data,target='Y',top_k=10,objective=1)
 ```
 incr_variable_rsquare=dominance.incremental_rsquare()
 ```
-<img src='Model Training.JPG'>
+<img src='images/Model Training.JPG'>
 
 <hr>
 
@@ -72,9 +72,9 @@ incr_variable_rsquare=dominance.incremental_rsquare()
 ```
 dominance.plot_incremental_rsquare()
 ```
-<img src='Bar.png'>
+<img src='images/Bar.png'>
 <hr>
-<img src='Pie.png'>
+<img src='images/Pie.png'>
 <hr>
 
 
@@ -82,7 +82,7 @@ dominance.plot_incremental_rsquare()
 ```
 dominance.domiance_stats()
 ```
-<img src='dominance_stats_reg.JPG'>
+<img src='images/dominance_stats_reg.JPG'>
 
 
 <hr>
@@ -95,7 +95,7 @@ import pandas as pd
 data=pd.read_excel("./Dominance_Classification_Task_Data.xlsx")                           # file is available in data folder 
 dominance_classification=Dominance(data=data,target='Y',top_k=4,objective=0,pseudo_r2="mcfadden")
 ``` 
-<img src='Classification Domiance.JPG'>
+<img src='images/Classification Domiance.JPG'>
 
 <hr>
 
@@ -103,7 +103,7 @@ dominance_classification=Dominance(data=data,target='Y',top_k=4,objective=0,pseu
 ```
 incr_variable_rsquare=dominance_classification.incremental_rsquare()
 ```
-<img src='Incremental_Pseudo_RSquare_Classification.JPG'>
+<img src='images/Incremental_Pseudo_RSquare_Classification.JPG'>
 
 <hr>
 
@@ -111,9 +111,9 @@ incr_variable_rsquare=dominance_classification.incremental_rsquare()
 ```
 dominance_classification.plot_incremental_rsquare()
 ```
-<img src='Bar_Classification.png'>
+<img src='images/Bar_Classification.png'>
 <hr>
-<img src='Pie_Classification.png'>
+<img src='images/Pie_Classification.png'>
 <hr>
 
 
@@ -121,5 +121,5 @@ dominance_classification.plot_incremental_rsquare()
 ```
 dominance_classification.domiance_stats()
 ```
-<img src='dominance_stats_classification.JPG'>
+<img src='images/dominance_stats_classification.JPG'>
 
