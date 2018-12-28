@@ -15,8 +15,8 @@ pip install dominance-analysis
 **Important Parameters**
  
   * data : Complete Dataset, should be a Pandas DataFrame.   
-  * target : Name of target variable, it should be present in passed dataset.
-  * top_k : No. of features to choose from all available features.
+  * target : Name of the target variable, it should be present in passed dataset.
+  * top_k : No. of features to choose from all available features. By default, the package will run for top 15 features.
   * objective : It can take value either 0 or 1.    0 for Classification Task and 1 for Regression Task
   * pseudo_r2 : It can have value "mcfadden","nagelkerke","cox_and_snell" or "estrella" where default="mcfadden". It's not needed in         case of regression task (objective=1)
 
