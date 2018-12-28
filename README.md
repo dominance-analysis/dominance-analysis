@@ -22,12 +22,13 @@ pip install dominance-analysis
 
 **Dominance Analysis - The Significance!**
 
-Dominance Analysis, according to Azen and Budescu meets three important criteria for measuring relative importance. First, the technique should be defined in terms of its ability to reduce error in predicting the outcome variable. Next, it should permit direct comparison of measures within a model (that is, X<sub>1</sub> is twice as important as X<sub>2</sub>). Finally, the technique should permit inferences concerning an attribute's direct effect (that is, when considered by itself), total effect (that is, when considered with other attributes) and partial effect (that is, when considered with various combinations of other predictors. Hence, Dominance analysis is both robust and intuitive and its interpretation is also very straightforwrd.
+Dominance Analysis, according to Azen and Budescu meets three important criteria for measuring relative importance. First, the technique should be defined in terms of its ability to reduce error in predicting the outcome variable. Next, it should permit direct comparison of measures within a model (that is, X<sub>1</sub> is twice as important as X<sub>2</sub>). Finally, the technique should permit inferences concerning an attribute's direct effect (that is, when considered by itself), total effect (that is, when considered with other attributes) and partial effect (that is, when considered with various combinations of other predictors. Hence, Dominance analysis is both robust and intuitive and its interpretation is also very straightforward.
 
 
 **Dominance Analysis - The Maths!**
 
-
+Dominance Analysis is unique as it measures relative importance in a pairwise fashion, and the two predictors are compared
+in the context of all 2<sup>(p−2)</sup> models that contain some subset of the other predictors.
 
 ### PSEUDO R-Square for Classification Task / Logistic Regression
 Logistic regression models are fitted using the method of maximum likelihood - i.e. the parameter estimates are those values which maximize the likelihood of the data which have been observed.
