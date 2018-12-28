@@ -18,12 +18,7 @@ pip install dominance-analysis
   * target : Name of the target variable, it should be present in passed dataset.
   * top_k : No. of features to choose from all available features. By default, the package will run for top 15 features.
   * objective : It can take value either 0 or 1. 0 for Classification and 1 for Regression.
-  * pseudo_r2 : It can take one of the following values:
-                "mcfadden"
-                "nagelkerke"
-                "cox_and_snell" 
-                "estrella" 
-                where default="mcfadden". It's not needed in case of regression (objective=1)
+  * pseudo_r2 : It can take one of the Pseudo R-Sqyared measures - "mcfadden","nagelkerke", "cox_and_snell" or "estrella", where default="mcfadden". It's not needed in case of regression (objective=1)
 
 ### PSEUDO R-Square for Classification Task / Logistic Regression
 Logistic regression models are fitted using the method of maximum likelihood - i.e. the parameter estimates are those values which maximize the likelihood of the data which have been observed.
