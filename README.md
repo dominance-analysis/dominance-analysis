@@ -36,8 +36,7 @@ Let's consider a scenario when we have 4 predictors; X<sub>1</sub>, X<sub>2</sub
 
 Below is the illustration of formulas used to compute the averaged additional contributions of X<sub>1</sub> and X<sub>2</sub>
 within model size in the poupulation with four predictors (We use the notation <img src='images/form1.JPG'> to represent the proportion of variance in Y that is accounted for by the predictors inthe model X. For example, <img src='images/form2.JPG'> represents
-the proportion of variance in Y that is accounted for by the model consisting of X1 and X3. The additional contribution of a given predictor is measured by the increase in  that results from adding
-that predictor to the regression model.:
+the proportion of variance in Y that is accounted for by the model consisting of X1 and X3. The additional contribution of a given predictor is measured by the increase in  that results from adding that predictor to the regression model.:
 
 <img src='images/formulas.JPG'>
 
