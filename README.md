@@ -38,6 +38,8 @@ Below is the illustration of formulas used to compute the averaged additional co
 
 <img src='images/formulas.JPG'>
 
+The measure for proportion of variance that we have used for regression is R<sup>2</sup> but since we don't have R<sup>2</sup> in logsitic regression/classification models, we have used Pseudo R<sup>2</sup>.
+
 ### PSEUDO R-Square for Classification Task / Logistic Regression
 Logistic regression models are fitted using the method of maximum likelihood - i.e. the parameter estimates are those values which maximize the likelihood of the data which have been observed.
 
