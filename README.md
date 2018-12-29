@@ -72,11 +72,17 @@ Cox and Snell Pseudo-R squared measure is defined as :
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Cox\&Snell}^{2}=1-\{\frac{L_{null}}{L_{full}}\}^{2/N}" title="\Large R_{Cox\&Snell}^{2}=1-\{\frac{L_{null}}{L_{full}}\}^{2/N}" />
 
+This measure satisfies three of the four properties.
+
 **4. Estrella R-Squared**
 
 Estrella Pseudo-R squared measure is defined as :
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Estrella}^{2}=1-\{\frac{LL_{full}}{LL_{null}}\}^{\frac{2}{N}*LL_{null}}" title="\Large R_{Estrella}^{2}=1-\}\frac{LL_{full}}{LL_{null}}\}^{\frac{2}{N}*LL_{null}}" />
+
+This measure satisfies all the four properties.
+
+Using each of these four R<sup>2</sup> analogues, the additional contribution of a given predictor to a specific logistic model can be measured as the change (i.e., increase) in the R<sup>2</sup>  analogues when the predictor is added to the model. 
 
 <hr>
 
