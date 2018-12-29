@@ -45,7 +45,7 @@ The beauty of the maths of Dominance Analysis is that the sum of the  overall av
 
 <img src='images/formula4.JPG'>
 
-### PSEUDO R-Square for Classification Task / Logistic Regression
+### Pseudo R-Squared for Classification Task / Logistic Regression
 
 Measures of fit in logistic regression can be classified by those based on sums of squares and those based on maximum likelihood statistics. Reviews of a variety of measures of fit proposed for logistic regression can be found in Amemiya (1981), Menard (2000), Mittlbock and Schemper (1996) and Zheng and Agresti (2000). Given the large number of proposed measures, criteria for defining appropriate R<sup>2</sup> analogues need to he determined. The following criteria, which are also found in the linear regression literature (e.g., Kvilseth. 1985: Van den Burg & Lewis, 1988), were used to select R<sup>2</sup> analogues for logistic regression:
 1. Boundedness: The measure should van, between a minimum of zero, indicating complete lack of fit, and a maximum of one, indicating perfect fit. 
@@ -96,7 +96,7 @@ Note: Since, Dominance Analysis is computationally intensove as it builds all su
 
 ### User Guide for computing Relative Importance when the response variable is Continous
 
-**Selecting top K features and getting R<sup>2</sup> of the Complete Model **
+**Selecting top K features and getting R<sup>2</sup> of the Complete Model**
 
 ```
 from dominance_analysis import Dominance
@@ -139,7 +139,7 @@ dominance.domiance_stats()
 
 ### User Guide for computing Relative Importance when the response variable is Binary
 
-**Selecting top K features and getting Pseudo R<sup>2</sup> of the Complete Model **
+**Selecting top K features and getting Pseudo R<sup>2</sup> of the Complete Model**
 ```
 from dominance_analysis import Dominance
 import pandas as pd
