@@ -87,11 +87,17 @@ Estrella Pseudo-R squared measure is defined as :
 
 This measure satisfies all the four properties.
 
-Using each of these four R<sup>2</sup> analogues, the additional contribution of a given predictor to a specific logistic model can be measured as the change (i.e., increase) in the R<sup>2</sup> analogues when the predictor is added to the model. Even though, all the four measures will give similar results, we recommend using either Estrella's (1998) model fit measure or McFadden's (1974) measure for conducting dominance analysis in logistic regression. We have a slight preference for McFadden's measure (and that is what the package will compute on default) because it is computationally simpler, but both McFadden's and Estrella’s measures satisfy the minimum requirements for an R<sup>2</sup> analogues.
+Using each of these four R<sup>2</sup> analogues, the additional contribution of a given predictor to a specific logistic model can be measured as the change (i.e., increase) in the R<sup>2</sup> analogues when the predictor is added to the model. Even though, all the four measures will give similar results, we recommend using either Estrella's (1998) model fit measure or McFadden's (1974) measure for conducting dominance analysis in logistic regression. We have a slight preference for McFadden's measure (and that is what the package will compute by default) because it is computationally simpler, but both McFadden's and Estrella’s measures satisfy the minimum requirements for an R<sup>2</sup> analogues.
 
 <hr>
 
-**User Guide for Regression Task**
+Note: Since, Dominance Analysis is computationally intensove as it builds all subset model (2<sup>p</sup>-1 models), we have provided the user the flexibility to chose number of top predictors that they want to cumpute relative importance for. For regression, Top K features are selected based on F statistic and for classification it is based sup>p</sup>-1 models), we have provided the user the flexibility to chose number of top predictors that they want to cumpute relative importance for. For regression, Top K features are selected based on F statistic and for classification it is based on Chi-Squared statistic.
+
+
+### User Guide for computing Relative Importance when the response variable is Continous
+
+**Selecting top K features and getting R<sup>2</sup> of the Complete Model **
+
 ```
 from dominance_analysis import Dominance
 import pandas as pd
@@ -102,7 +108,7 @@ dominance=Dominance(data=data,target='Y',top_k=10,objective=1)
 
 <hr>
 
-**Incremental R-Square**
+**Incremental R-Squared**
 ```
 incr_variable_rsquare=dominance.incremental_rsquare()
 ```
@@ -110,7 +116,7 @@ incr_variable_rsquare=dominance.incremental_rsquare()
 
 <hr>
 
-**Plot Incremental R-Square**
+**Plot Incremental R-Squared and the Dominance Curve**
 ```
 dominance.plot_incremental_rsquare()
 ```
@@ -130,7 +136,10 @@ dominance.domiance_stats()
 <hr>
 
 
-**User Guide for Classification Task**
+
+### User Guide for computing Relative Importance when the response variable is Binary
+
+**Selecting top K features and getting Pseudo R<sup>2</sup> of the Complete Model **
 ```
 from dominance_analysis import Dominance
 import pandas as pd
@@ -141,7 +150,7 @@ dominance_classification=Dominance(data=data,target='Y',top_k=4,objective=0,pseu
 
 <hr>
 
-**Incremental Pseudo R-Square**
+**Incremental Pseudo R-Squared**
 ```
 incr_variable_rsquare=dominance_classification.incremental_rsquare()
 ```
@@ -149,7 +158,7 @@ incr_variable_rsquare=dominance_classification.incremental_rsquare()
 
 <hr>
 
-**Plot Incremental Pseudo R-Square**
+**Plot Incremental Pseudo R-Squared**
 ```
 dominance_classification.plot_incremental_rsquare()
 ```
