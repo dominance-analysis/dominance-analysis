@@ -48,7 +48,7 @@ The beauty of the maths of Dominance Analysis is that the sum of the  overall av
 ### Pseudo R-Squared for Classification Task / Logistic Regression
 
 Measures of fit in logistic regression can be classified by those based on sums of squares and those based on maximum likelihood statistics. Reviews of a variety of measures of fit proposed for logistic regression can be found in Amemiya (1981), Menard (2000), Mittlbock and Schemper (1996) and Zheng and Agresti (2000). Given the large number of proposed measures, criteria for defining appropriate R<sup>2</sup> analogues need to he determined. The following criteria, which are also found in the linear regression literature (e.g., Kvilseth. 1985: Van den Burg & Lewis, 1988), were used to select R<sup>2</sup> analogues for logistic regression:
-1. Boundedness: The measure should van, between a minimum of zero, indicating complete lack of fit, and a maximum of one, indicating perfect fit. 
+1. Boundedness: The measure should vary between a minimum of zero, indicating complete lack of fit, and a maximum of one, indicating perfect fit. 
 2. Linear invariance: The measure should be invariant to nonsingular linear transformations of the variables (Ys and Xs). 
 3. Monotonicity: The measure should not decrease with the addition of a predictor.
 4. Intuitive Interpretability: The measure of fit is intuitively interpretable, in that it agrees with the scale of the linear case for intermediate values.
@@ -175,3 +175,9 @@ dominance_classification.domiance_stats()
 ```
 <img src='images/dominance_stats_classification.JPG'>
 
+### References
+1. Azen, R. (2000). Inference for predictor comparisons:Dominance analysis and the distribution of R2 differences. Dissertation Abstracts International B, 61/10, 5616.
+2. Azen, R., Budescu, D. V., & Reiser, B. (2001). Criticality of predictors in multiple regression. British Journal of Mathematical and Statistical Psychology, 54, 201–225.
+3. Azen, R., Budescu, D. V. (2003). The Dominance Analysis Approach for Comparing Predictors in Multiple Regression. Psychological Methods, 2003, Vol. 8, No. 2, 129–148.
+4. Azen, R., Budescu, D. V. (2006). Comparing Predictors in Multivariate Regression Models: An Extension of Dominance Analysis. Journal of Educational and Behavioral Statistics Summer 2006, Vol. 31, No. 2, pp. 157-180.
+5. Azen, R., Traxel, N. (2009). Using Dominance Analysis to Determine Predictor Importance in Logistic Regression. Journal of Educational and Behavioral Statistics September 2009, Vol. 34, No. 3, pp. 319-347.
