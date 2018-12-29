@@ -37,7 +37,7 @@ Let's consider a scenario when we have 4 predictors; X<sub>1</sub>, X<sub>2</sub
 Below is the illustration of formulas used to compute the averaged additional contributions of X<sub>1</sub> and X<sub>2</sub>
 within model size in the poupulation with four predictors:
 
-
+<img src='images/formulas.JPG'>
 
 ### PSEUDO R-Square for Classification Task / Logistic Regression
 Logistic regression models are fitted using the method of maximum likelihood - i.e. the parameter estimates are those values which maximize the likelihood of the data which have been observed.
