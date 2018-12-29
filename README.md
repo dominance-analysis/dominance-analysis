@@ -91,8 +91,9 @@ Using each of these four R<sup>2</sup> analogues, the additional contribution of
 
 <hr>
 
-Note: Since, Dominance Analysis is computationally intensove as it builds all subset model (2<sup>p</sup>-1 models), we have provided the user the flexibility to chose number of top predictors that they want to cumpute relative importance for. For regression, Top K features are selected based on F statistic and for classification it is based sup>p</sup>-1 models), we have provided the user the flexibility to chose number of top predictors that they want to cumpute relative importance for. For regression, Top K features are selected based on F statistic and for classification it is based on Chi-Squared statistic.
+Note: Since, Dominance Analysis is computationally intensive as it builds all subset model (2<sup>p</sup>-1 models), we have provided the user the flexibility to chose number of top predictors that they want to cumpute relative importance for. For regression, Top K features are selected based on F statistic and for classification it is based on Chi-Squared statistic.
 
+<hr>
 
 ### User Guide for computing Relative Importance when the response variable is Continous
 
