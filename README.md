@@ -48,29 +48,31 @@ Measures of fit in logistic regression can be classified by those based on sums 
 3. Monotonicity: The measure should not decrease with the addition of a predictor.
 4. Intuitive Interpretability: The measure of fit is intuitively interpretable, in that it agrees with the scale of the linear case for intermediate values.
 
+Based on these criteria, the following four R<sup>2</sup> analogues were chosen that satisfied at least three of these four properties:
 
-
-**1. McFadden's Pseudo-R Square**
+**1. McFadden's Pseudo-R Squared**
 
  McFadden's Pseudo-R squared measure is defined as :
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{McFadden}^{2}=1-\frac{log(L_{full})}{log(L_{null})}" title="\Large R_{McFadden}^{2}=1-\frac{log(L_{full})}{log(L_{null})}" />
 
+This measure satisfies all the four properties.
 
-**2. Nagelkerke Pseudo-R Square**
+**2. Nagelkerke Pseudo-R Squared**
 
 Nagelkerke Pseudo-R squared measure is defined as :
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Nagelkerke}^{2}=\frac{1-\{\frac{L_{null}}{L_{full}}\}^{2/N}}{1-L_{null}^{2/N}}" title="\Large R_{Nagelkerke}^{2}=\frac{1-\{\frac{L_{null}}{L_{full}}\}^{2/N}}{1-L_{null}^{2/N}}" />
 
+This measure satisfies three of the four properties and doesn't satisfy the property of Interpretability.
 
-**3. Cox and Snell R-Square**
+**3. Cox and Snell R-Squared**
 
 Cox and Snell Pseudo-R squared measure is defined as :
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{Cox\&Snell}^{2}=1-\{\frac{L_{null}}{L_{full}}\}^{2/N}" title="\Large R_{Cox\&Snell}^{2}=1-\{\frac{L_{null}}{L_{full}}\}^{2/N}" />
 
-**4. Estrella R-Square**
+**4. Estrella R-Squared**
 
 Estrella Pseudo-R squared measure is defined as :
 
