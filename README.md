@@ -41,7 +41,9 @@ Below is the illustration of formulas used to compute the averaged additional co
 The measure for proportion of variance that we have used for regression is R<sup>2</sup> but since we don't have R<sup>2</sup> in logsitic regression/classification models, we have used Pseudo R<sup>2</sup>.
 
 ### PSEUDO R-Square for Classification Task / Logistic Regression
-Logistic regression models are fitted using the method of maximum likelihood - i.e. the parameter estimates are those values which maximize the likelihood of the data which have been observed.
+Measures of fit in logistic regression can be classified by those based on sums of squares and those based on maximum likelihood statistics. Reviews of a variety of measures of fit proposed for logistic regression can be found in Amemiya (1981). Menard (2000). Mittlbock and Schemper (1996). and Zheng and Agresti (2000). Given the large number of proposed measures. criteria for defining appropriate R<sup>2</sup> analogues need to he determined. The following criteria, which are also found in the linear regression literature (e.g., Kvilseth. 1985: Van den Burg & Lewis, 1988), were used to select R<sup>2</sup> analogues for logistic regression:
+
+
 
 **1. McFadden's Pseudo-R Square**
 
