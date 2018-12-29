@@ -91,7 +91,7 @@ Using each of these four R<sup>2</sup> analogues, the additional contribution of
 
 <hr>
 
-Note: Since, Dominance Analysis is computationally intensive as it builds all subset model (2<sup>p</sup>-1 models), we have provided the user the flexibility to chose number of top predictors that they want to cumpute relative importance for. For regression, Top K features are selected based on F statistic and for classification it is based on Chi-Squared statistic.
+Note: Since, Dominance Analysis is computationally intensive as it builds all subset model (2<sup>p</sup>-1 models), we have provided the user the flexibility to choose number of top predictors that they want to compute relative importance for. For regression, Top K features are selected based on F statistic and for classification it is based on Chi-Squared statistic. Dominance Analysis can be used in combination with Principal Component Analysis (PCA) and/or Factor Analysis for getting accurate and intutive importance of predictors.
 
 <hr>
 
