@@ -103,6 +103,8 @@ As described earlier, a relative importance measure should be able to describe a
 3. Average Partial Dominance -
 4. Total Dominance -
 
+<hr>
+
 ### User Guide for computing Relative Importance when the response variable is Continous
 
 **Selecting top K features and getting R<sup>2</sup> of the Complete Model**
