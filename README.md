@@ -131,9 +131,9 @@ incr_variable_rsquare=dominance.incremental_rsquare()
 ```
 dominance.plot_incremental_rsquare()
 ```
-<img src='images/Bar.png'>
+<img src='images/Bar_Regression.png'>
 <hr>
-<img src='images/Pie.png'>
+<img src='images/Pie_Regression.png'>
 <hr>
 
 
