@@ -137,7 +137,7 @@ dominance.plot_incremental_rsquare()
 <hr>
 
 
-**Dominance Statistics (R-Square)**
+**Dominance Statistics (R-Squared)**
 ```
 dominance.domiance_stats()
 ```
@@ -179,7 +179,7 @@ dominance_classification.plot_incremental_rsquare()
 <hr>
 
 
-**Dominance Statistics (R-Square)**
+**Dominance Statistics (R-Squared)**
 ```
 dominance_classification.domiance_stats()
 ```
