@@ -91,9 +91,17 @@ Using each of these four R<sup>2</sup> analogues, the additional contribution of
 
 <hr>
 
-Note: Since, Dominance Analysis is computationally intensive as it builds all subset model (2<sup>p</sup>-1 models), we have provided the user the flexibility to choose number of top predictors that they want to compute relative importance for. For regression, Top K features are selected based on F statistic and for classification it is based on Chi-Squared statistic. Dominance Analysis can be used in combination with Principal Component Analysis (PCA) and/or Factor Analysis for getting accurate and intutive importance of predictors.
+Note: Since, Dominance Analysis is computationally intensive as it builds all subset model (2<sup>p</sup>-1 models), we have provided the user the flexibility to choose number of top predictors that they want to compute relative importance for. For regression, Top K features are selected based on F-regression and for classification it is based on Chi-Squared statistic. Dominance Analysis can be used in combination with Principal Component Analysis (PCA) or Factor Analysis or any other feature reduction algorithm for getting accurate and intutive importance of predictors.
 
 <hr>
+
+### Dominance Statistics
+
+As described earlier, a relative importance measure should be able to describe a predictor's direct, total and partial effet, therefore in the Dominance Statistics, we have come up with four different types of Dominance measures. Below are the definition and interpretation of the measures:
+1. Interactional Dominance - 
+2. Indivudual Dominance -
+3. Average Partial Dominance -
+4. Total Dominance -
 
 ### User Guide for computing Relative Importance when the response variable is Continous
 
