@@ -123,7 +123,7 @@ dominance=Dominance(data=data,target='Y',top_k=10,objective=1)
 ```
 incr_variable_rsquare=dominance.incremental_rsquare()
 ```
-<img src='images/Model Training.JPG'>
+<img src='images/Model_Training.JPG'>
 
 <hr>
 
