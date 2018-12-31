@@ -157,7 +157,7 @@ import pandas as pd
 data=pd.read_excel("./Dominance_Classification_Task_Data.xlsx")                           # file is available in data folder 
 dominance_classification=Dominance(data=data,target='Y',top_k=4,objective=0,pseudo_r2="mcfadden")
 ``` 
-<img src='images/Classification Domiance.JPG'>
+<img src='images/Classification_Domiance.JPG'>
 
 <hr>
 
@@ -165,7 +165,7 @@ dominance_classification=Dominance(data=data,target='Y',top_k=4,objective=0,pseu
 ```
 incr_variable_rsquare=dominance_classification.incremental_rsquare()
 ```
-<img src='images/Incremental_Pseudo_RSquare_Classification.JPG'>
+<img src='images/Incremental_Pseudo_RSquare.JPG'>
 
 <hr>
 
