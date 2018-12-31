@@ -115,7 +115,7 @@ import pandas as pd
 data=pd.read_excel("./Book2.xlsx")                           # file is available in data folder 
 dominance=Dominance(data=data,target='Y',top_k=10,objective=1)
 ``` 
-<img src='images/Regression Domiance.JPG'>
+<img src='images/Regression_Domiance.JPG'>
 
 <hr>
 
