@@ -169,7 +169,7 @@ dominance_classification=Dominance(data=breast_cancer_data,target='target',objec
 ```
 incr_variable_rsquare=dominance_classification.incremental_rsquare()
 ```
-<img src='images/Incremental_Pseudo_RSquare.JPG'>
+<img src='images/Breast_Cancer_Data_Model_Training.JPG'>
 
 <hr>
 
