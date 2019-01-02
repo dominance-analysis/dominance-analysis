@@ -107,13 +107,15 @@ As described earlier, a relative importance measure should be able to describe a
 
 ### User Guide for computing Relative Importance when the response variable is Continous
 
+**Using Boston Housing Dataset downloaded from: https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html**
+
 **Selecting top K features and getting R<sup>2</sup> of the Complete Model**
 
 ```
+from dominance_analysis import Dominance_Datasets
 from dominance_analysis import Dominance
-import pandas as pd
-data=pd.read_excel("./Book2.xlsx")                           # file is available in data folder 
-dominance=Dominance(data=data,target='Y',top_k=10,objective=1)
+boston_dataset=Dominance_Datasets.get_boston()
+dominance_regression=Dominance(data=boston_dataset,target='House_Price',objective=1)
 ``` 
 <img src='images/Regression_Domiance.JPG'>
 
@@ -121,7 +123,7 @@ dominance=Dominance(data=data,target='Y',top_k=10,objective=1)
 
 **Incremental R-Squared**
 ```
-incr_variable_rsquare=dominance.incremental_rsquare()
+incr_variable_rsquare=dominance_regression.incremental_rsquare()
 ```
 <img src='images/Model_Training.JPG'>
 
@@ -129,7 +131,7 @@ incr_variable_rsquare=dominance.incremental_rsquare()
 
 **Plot Incremental R-Squared and the Dominance Curve**
 ```
-dominance.plot_incremental_rsquare()
+dominance_regression.plot_incremental_rsquare()
 ```
 <img src='images/Bar_Regression.png'>
 <hr>
@@ -139,7 +141,7 @@ dominance.plot_incremental_rsquare()
 
 **Dominance Statistics (R-Squared)**
 ```
-dominance.domiance_stats()
+dominance_regression.domiance_stats()
 ```
 <img src='images/dominance_stats_reg.JPG'>
 
