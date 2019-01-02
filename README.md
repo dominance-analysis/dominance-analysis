@@ -152,14 +152,16 @@ dominance_regression.domiance_stats()
 
 ### User Guide for computing Relative Importance when the response variable is Binary
 
+**Breast Cancer Wisconsin (Diagnostic) dataset downloaded from: https://goo.gl/U2Uwz2**
+
 **Selecting top K features and getting Pseudo R<sup>2</sup> of the Complete Model**
 ```
+from dominance_analysis import Dominance_Datasets
 from dominance_analysis import Dominance
-import pandas as pd
-data=pd.read_excel("./Dominance_Classification_Task_Data.xlsx")                           # file is available in data folder 
-dominance_classification=Dominance(data=data,target='Y',top_k=4,objective=0,pseudo_r2="mcfadden")
+breast_cancer_data=Dominance_Datasets.get_breast_cancer()
+dominance_classification=Dominance(data=breast_cancer_data,target='target',objective=0,pseudo_r2="mcfadden")
 ``` 
-<img src='images/Classification_Domiance.JPG'>
+<img src='images/Breast_Cancer_Data_Dominance.JPG'>
 
 <hr>
 
@@ -185,7 +187,7 @@ dominance_classification.plot_incremental_rsquare()
 ```
 dominance_classification.domiance_stats()
 ```
-<img src='images/dominance_stats_classification.JPG'>
+<img src='images/breast_cancer_data_dominance_stats.JPG'>
 
 ### References
 1. Azen, R. (2000). Inference for predictor comparisons:Dominance analysis and the distribution of R2 differences. Dissertation Abstracts International B, 61/10, 5616.
