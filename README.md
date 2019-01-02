@@ -175,9 +175,9 @@ incr_variable_rsquare=dominance_classification.incremental_rsquare()
 ```
 dominance_classification.plot_incremental_rsquare()
 ```
-<img src='images/Bar_Classification.png'>
+<img src='images/bar_breast_cancer.png'>
 <hr>
-<img src='images/Pie_Classification.png'>
+<img src='images/pie_breast_cancer.png'>
 <hr>
 
 
