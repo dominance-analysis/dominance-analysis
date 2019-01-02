@@ -105,6 +105,10 @@ As described earlier, a relative importance measure should be able to describe a
 
 <hr>
 
+*Complete code for below examples is available in example folder*
+
+<hr>
+
 ### User Guide for computing Relative Importance when the response variable is Continous
 
 **Using Boston Housing Dataset downloaded from: https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html**
