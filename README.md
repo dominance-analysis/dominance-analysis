@@ -117,7 +117,7 @@ from dominance_analysis import Dominance
 boston_dataset=Dominance_Datasets.get_boston()
 dominance_regression=Dominance(data=boston_dataset,target='House_Price',objective=1)
 ``` 
-<img src='images/Regression_Domiance.JPG'>
+<img src='images/Housing_Data_Dominance.JPG'>
 
 <hr>
 
@@ -125,7 +125,7 @@ dominance_regression=Dominance(data=boston_dataset,target='House_Price',objectiv
 ```
 incr_variable_rsquare=dominance_regression.incremental_rsquare()
 ```
-<img src='images/Model_Training.JPG'>
+<img src='images/Housing_Data_Model_Training.JPG'>
 
 <hr>
 
@@ -133,9 +133,9 @@ incr_variable_rsquare=dominance_regression.incremental_rsquare()
 ```
 dominance_regression.plot_incremental_rsquare()
 ```
-<img src='images/Bar_Regression.png'>
+<img src='images/bar_boston_house_price.png'>
 <hr>
-<img src='images/Pie_Regression.png'>
+<img src='images/pie_boston_house_price.png'>
 <hr>
 
 
@@ -143,7 +143,7 @@ dominance_regression.plot_incremental_rsquare()
 ```
 dominance_regression.domiance_stats()
 ```
-<img src='images/dominance_stats_reg.JPG'>
+<img src='images/housing_data_dominance_stats.JPG'>
 
 
 <hr>
