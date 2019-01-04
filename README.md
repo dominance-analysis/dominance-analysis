@@ -106,7 +106,9 @@ As described earlier, a relative importance measure should be able to describe a
 
 <hr>
 
-*Complete code for below examples is available in example folder or public kernels on kaggle <a href="https://www.kaggle.com/iamsajanbhagat/dominance-analysis-on-boston-house-prices-dataset" target="_blank">Dominane Analysis on Boston House Price Data</a> and <a href="https://www.kaggle.com/iamsajanbhagat/dominance-analysis-on-breast-cancer-dataset" target="_blank"> Dominance Analysis on Breast Cancer Dataset</a>*
+*Complete code for below examples is available in example folder or the following public kernels on kaggle:
+Regression - <a href="https://www.kaggle.com/iamsajanbhagat/dominance-analysis-on-boston-house-prices-dataset" target="_blank">Dominane Analysis on Boston House Price Data</a>
+Classification- <a href="https://www.kaggle.com/iamsajanbhagat/dominance-analysis-on-breast-cancer-dataset" target="_blank"> Dominance Analysis on Breast Cancer Dataset</a>*
 
 <hr>
 
