@@ -44,7 +44,7 @@ The measure for proportion of variance that we have used for regression is R<sup
 
 The beauty of the maths of Dominance Analysis is that the sum of the  overall average incremental R<sup>2</sup> of all preditors is equal to the R<sup>2</sup> of the complete model (model with all predictors). Hence, the total R<sup>2</sup> can be attributed to each predcitor in the model. Below is an illustration of Dominance Analysis in the Population for Hypothetical Example With Four Predictors:
 
-<img src='images/formula4.JPG'>
+<img src='images/PrecentRel.JPG'>
 
 ### Pseudo R-Squared for Classification Task / Logistic Regression
 
