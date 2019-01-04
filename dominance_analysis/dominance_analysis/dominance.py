@@ -158,7 +158,7 @@ class Dominance:
 		self.variable_stats=variable_stats
 		return self.variable_stats
 
-	def domiance_stats(self):
+	def dominance_stats(self):
 		tf=pd.DataFrame(self.variable_stats).T
 		tf['Interactional Dominance']=tf['conditional_dominance']
 		tf['Average Partial Dominance']=tf['partial_dominance'].apply(lambda x:np.mean(x))
@@ -260,10 +260,9 @@ class Dominance:
 
 class Dominance_Datasets:
 	"""docstring for Dominance_Datasets"""
-	def __init__(self):
-		pass
-
-	def get_breast_cancer():
+	
+	@classmethod
+	def get_breast_cancer(cls):
 		print("""The copy of UCI ML Breast Cancer Wisconsin (Diagnostic) dataset is downloaded from: https://goo.gl/U2Uwz2""")
 		print("""Internally using load_breast_cancer function from sklearn.datasets """)
 		breast_cancer_data=pd.DataFrame(data=load_breast_cancer()['data'],columns=load_breast_cancer()['feature_names'])
@@ -271,11 +270,15 @@ class Dominance_Datasets:
 		target_dict=dict({j for i,j in zip(load_breast_cancer()['target_names'],enumerate(load_breast_cancer()['target_names']))})
 		breast_cancer_data['target_names']=breast_cancer_data['target'].map(target_dict)
 		return breast_cancer_data.iloc[:,:-1]
-
-
-	def get_boston():
+	
+	@classmethod
+	def get_boston(cls):
 		print("""The copy of Boston Housing Dataset is downloaded from: https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html""")
 		print("""Internally using load_boston function from sklearn.datasets """)
 		boston_data=pd.DataFrame(data=load_boston()['data'],columns=load_boston()['feature_names'])
 		boston_data['House_Price']=load_boston()['target']
 		return boston_data
+
+	def __init__(self):
+		print("Datasets for Dominance Analysis")
+		
