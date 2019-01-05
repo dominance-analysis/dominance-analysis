@@ -170,7 +170,7 @@ from dominance_analysis import Dominance
 breast_cancer_data=Dominance_Datasets.get_breast_cancer()
 dominance_classification=Dominance(data=breast_cancer_data,target='target',objective=0,pseudo_r2="mcfadden")
 ``` 
-<img src='images/Breast_Cancer_Data_Dominance.JPG'>
+<img src='images/Breast_Cancer_Data_Dominance_Latest.JPG'>
 
 <hr>
 
