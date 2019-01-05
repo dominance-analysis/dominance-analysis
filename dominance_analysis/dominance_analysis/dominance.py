@@ -25,10 +25,13 @@ class Dominance:
 		self.data = data
 		self.target=target
 		self.objective=objective
+		if(self.objective==0):
+			self.data['intercept']=1
 		self.top_k=top_k if top_k else min((len(self.data.columns)-1),15)
 		self.pseudo_r2=pseudo_r2
 		assert (self.top_k >1 ) and (self.top_k<(len(self.data.columns))),"Value of top_k ranges from 1 to n-1 !"
 		self.complete_model_rsquare()
+
 	
 	def conditional_dominance(self,model_rsquares,model_features_k,model_features_k_minus_1,columns):
 		# print("#"*25," Calculating Conditional Dominance ","#"*25)
@@ -49,13 +52,18 @@ class Dominance:
 		return [list(combinations(columns,i)) for i in range(1,len(columns)+1)]
 
 	def McFadden_RSquare(self,columns):
-		log_clf=sm.Logit(self.data[self.target],self.data[columns])
+		cols=columns.copy()
+		cols.append('intercept')
+		log_clf=sm.Logit(self.data[self.target],self.data[cols])
 		result=log_clf.fit(disp=0)
+		# print(result.params)
 		mcfadden_rsquare=result.prsquared
 		return mcfadden_rsquare
 
 	def Nagelkerke_Rsquare(self,columns):
-		log_clf=sm.Logit(self.data[self.target],self.data[columns])
+		cols=columns.copy()
+		cols.append('intercept')
+		log_clf=sm.Logit(self.data[self.target],self.data[cols])
 		N=self.data.shape[0]
 		result=log_clf.fit(disp=0)
 		llf=result.llf
@@ -66,7 +74,9 @@ class Dominance:
 		return naglkerke_rsquare
 
 	def Cox_and_Snell_Rsquare(self,columns):
-		log_clf=sm.Logit(self.data[self.target],self.data[columns])
+		cols=columns.copy()
+		cols.append('intercept')
+		log_clf=sm.Logit(self.data[self.target],self.data[cols])
 		N=self.data.shape[0]
 		result=log_clf.fit(disp=0)
 		llf=result.llf
@@ -77,7 +87,9 @@ class Dominance:
 		return cox_and_snell_rsquare
 
 	def Estrella(self,columns):
-		log_clf=sm.Logit(self.data[self.target],self.data[columns])
+		cols=columns.copy()
+		cols.append('intercept')
+		log_clf=sm.Logit(self.data[self.target],self.data[cols])
 		N=self.data.shape[0]
 		result=log_clf.fit(disp=0)
 		llf=result.llf
@@ -86,7 +98,7 @@ class Dominance:
 		return estrella_rsquare
 
 	def Adjusted_McFadden_RSquare(self,columns):
-		log_clf=sm.Logit(self.data[self.target],self.data[columns])
+		log_clf=sm.Logit(self.data[self.target],self.data[cols])
 		result=log_clf.fit(disp=0)
 		llf=result.llf
 		llnull=result.llnull
@@ -173,9 +185,11 @@ class Dominance:
 	def get_top_k(self):
 		columns=list(self.data.columns.values)
 		columns.remove(self.target)
+		# remove intercept from top_k
 		if(self.objective):
 			top_k_vars=SelectKBest(f_regression, k=self.top_k)
 		else:
+			columns.remove('intercept')
 			top_k_vars=SelectKBest(chi2, k=self.top_k)
 		top_k_vars.fit_transform(self.data[columns], self.data[self.target])
 		return [columns[i] for i in top_k_vars.get_support(indices=True)]

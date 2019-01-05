@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dominance_analysis",
-    version="1.0.0",
+    version="1.0.1",
     author="Sajan Kumar Bhagat, Kunjithapatham Sivakumar, Shashank Shekhar",
     author_email='bhagat.sajan0073@gmail.com, s.vibish@gmail.com, quintshekhar@gmail.com',
     maintainer="Sajan Kumar Bhagat, Kunjithapatham Sivakumar, Shashank Shekhar",
