@@ -153,7 +153,7 @@ dominance_regression.plot_incremental_rsquare()
 ```
 dominance_regression.dominance_stats()
 ```
-<img src='images/housing_data_dominance_stats.JPG'>
+<img src='images/housing_data_dominance_stats_latest.JPG'>
 
 
 <hr>
@@ -197,7 +197,7 @@ dominance_classification.plot_incremental_rsquare()
 ```
 dominance_classification.dominance_stats()
 ```
-<img src='images/breast_cancer_data_dominance_stats_latest.JPG'>
+<img src='images/breast_cancer_data_dominance_stats.JPG'>
 
 ### References
 1. Azen, R. (2000). Inference for predictor comparisons:Dominance analysis and the distribution of R<sup>2</sup> differences. Dissertation Abstracts International B, 61/10, 5616.
