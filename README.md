@@ -199,7 +199,7 @@ dominance_classification.dominance_stats()
 <img src='images/breast_cancer_data_dominance_stats_latest.JPG'>
 
 ### References
-1. Azen, R. (2000). Inference for predictor comparisons:Dominance analysis and the distribution of R2 differences. Dissertation Abstracts International B, 61/10, 5616.
+1. Azen, R. (2000). Inference for predictor comparisons:Dominance analysis and the distribution of R<sup>2</sup> differences. Dissertation Abstracts International B, 61/10, 5616.
 2. Azen, R., Budescu, D. V., & Reiser, B. (2001). Criticality of predictors in multiple regression. British Journal of Mathematical and Statistical Psychology, 54, 201–225.
 3. Azen, R., Budescu, D. V. (2003). The Dominance Analysis Approach for Comparing Predictors in Multiple Regression. Psychological Methods, 2003, Vol. 8, No. 2, 129–148.
 4. Azen, R., Budescu, D. V. (2006). Comparing Predictors in Multivariate Regression Models: An Extension of Dominance Analysis. Journal of Educational and Behavioral Statistics Summer 2006, Vol. 31, No. 2, pp. 157-180.
