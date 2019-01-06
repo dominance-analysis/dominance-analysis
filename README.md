@@ -20,7 +20,7 @@ pip install dominance-analysis
   * data : Complete Dataset, should be a Pandas DataFrame.   
   * target : Name of the target variable, it should be present in passed dataset.
   * top_k : No. of features to choose from all available features. By default, the package will run for top 15 features.
-  * objective : It can take value either 0 or 1. 0 for Classification and 1 for Regression.
+  * objective : It can take value either 0 or 1. 0 for Classification and 1 for Regression. By default, the package will run for Regression.
   * pseudo_r2 : It can take one of the Pseudo R-Squared measures - "mcfadden","nagelkerke", "cox_and_snell" or "estrella", where default="mcfadden". It's not needed in case of regression (objective=1)
 
 ### Dominance Analysis - The Significance!
