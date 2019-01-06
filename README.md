@@ -42,7 +42,7 @@ Below is the illustration of formulas used to compute the averaged additional co
 The measure for proportion of variance that we have used for regression is R<sup>2</sup> but since we don't have R<sup>2</sup> in logsitic regression/classification models, we have used Pseudo R<sup>2</sup>.
 
 
-The beauty of the maths of Dominance Analysis is that the sum of the  overall average incremental R<sup>2</sup> of all preditors is equal to the R<sup>2</sup> of the complete model (model with all predictors). Hence, the total R<sup>2</sup> can be attributed to each predcitor in the model. Below is an illustration of Dominance Analysis in the Population for Hypothetical Example With Four Predictors:
+The beauty of the math of Dominance Analysis is that the sum of the  overall average incremental R<sup>2</sup> of all preditors is equal to the R<sup>2</sup> of the complete model (model with all predictors). Hence, the total R<sup>2</sup> can be attributed to each predcitor in the model. Below is an illustration of Dominance Analysis in the Population for Hypothetical Example With Four Predictors:
 
 <img src='images/PercentRel.jpg'>
 
