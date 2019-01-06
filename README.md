@@ -153,7 +153,7 @@ dominance_regression.plot_incremental_rsquare()
 ```
 dominance_regression.dominance_stats()
 ```
-<img src='images/housing_data_dominance_stats_latest.JPG'>
+<img src='images/housing_data_dominance_stats.JPG'>
 
 
 <hr>
