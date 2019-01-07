@@ -101,7 +101,7 @@ Note: Since, Dominance Analysis is computationally intensive as it builds all su
 ### Dominance Statistics
 
 As described earlier, a relative importance measure should be able to describe a predictor's direct, total and partial effet, therefore in the Dominance Statistics, we have come up with four different types of Dominance measures. Below are the definition and interpretation of the measures:
-1. Interactional Dominance - This is the incremental R<sup>2</sup> contribution of the predictor to the complete model. If we have four predictors X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub> and X<sub>4</sub>, let R<sup>2</sup><sub>Y.X</sub>
+1. Interactional Dominance - This is the incremental R<sup>2</sup> contribution of the predictor to the complete model. If we have four predictors X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub> and X<sub>4</sub>, let R<sup>2</sup><sub>Y.X</sub> be the 
 
 2. Individual Dominance -
 3. Average Partial Dominance -
