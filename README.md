@@ -107,6 +107,7 @@ As described earlier, a relative importance measure should be able to describe a
 3. Average Partial Dominance -
 4. Total Dominance -
 
+<img src='images/Dom'>
 <hr>
 
 *Complete code for below examples is available in example folder or the following public kernels on kaggle:
