@@ -2,6 +2,8 @@ import numpy as np
 from itertools import combinations
 import sklearn
 from sklearn.linear_model import LinearRegression
+from sklearn.datasets import load_breast_cancer
+from sklearn.datasets import load_boston
 from tqdm import tqdm
 from sklearn.feature_selection import SelectKBest,chi2,f_regression
 import pandas as pd
@@ -18,15 +20,18 @@ init_notebook_mode(connected=True)
 
 class Dominance:
 	"""docstring for ClassName"""
-	def __init__(self,data,target,top_k=15,objective=1,pseudo_r2='mcfadden'):
+	def __init__(self,data,target,top_k=None,objective=1,pseudo_r2='mcfadden'):
 		# super(ClassName, self).__init__()
 		self.data = data
 		self.target=target
 		self.objective=objective
-		self.top_k=top_k if top_k else (len(self.data.columns)-1)
+		if(self.objective==0):
+			self.data['intercept']=1
+		self.top_k=top_k if top_k else min((len(self.data.columns)-1),15)
 		self.pseudo_r2=pseudo_r2
 		assert (self.top_k >1 ) and (self.top_k<(len(self.data.columns))),"Value of top_k ranges from 1 to n-1 !"
 		self.complete_model_rsquare()
+
 	
 	def conditional_dominance(self,model_rsquares,model_features_k,model_features_k_minus_1,columns):
 		# print("#"*25," Calculating Conditional Dominance ","#"*25)
@@ -47,13 +52,18 @@ class Dominance:
 		return [list(combinations(columns,i)) for i in range(1,len(columns)+1)]
 
 	def McFadden_RSquare(self,columns):
-		log_clf=sm.Logit(self.data[self.target],self.data[columns])
+		cols=columns.copy()
+		cols.append('intercept')
+		log_clf=sm.Logit(self.data[self.target],self.data[cols])
 		result=log_clf.fit(disp=0)
+		# print(result.params)
 		mcfadden_rsquare=result.prsquared
 		return mcfadden_rsquare
 
 	def Nagelkerke_Rsquare(self,columns):
-		log_clf=sm.Logit(self.data[self.target],self.data[columns])
+		cols=columns.copy()
+		cols.append('intercept')
+		log_clf=sm.Logit(self.data[self.target],self.data[cols])
 		N=self.data.shape[0]
 		result=log_clf.fit(disp=0)
 		llf=result.llf
@@ -64,7 +74,9 @@ class Dominance:
 		return naglkerke_rsquare
 
 	def Cox_and_Snell_Rsquare(self,columns):
-		log_clf=sm.Logit(self.data[self.target],self.data[columns])
+		cols=columns.copy()
+		cols.append('intercept')
+		log_clf=sm.Logit(self.data[self.target],self.data[cols])
 		N=self.data.shape[0]
 		result=log_clf.fit(disp=0)
 		llf=result.llf
@@ -75,7 +87,9 @@ class Dominance:
 		return cox_and_snell_rsquare
 
 	def Estrella(self,columns):
-		log_clf=sm.Logit(self.data[self.target],self.data[columns])
+		cols=columns.copy()
+		cols.append('intercept')
+		log_clf=sm.Logit(self.data[self.target],self.data[cols])
 		N=self.data.shape[0]
 		result=log_clf.fit(disp=0)
 		llf=result.llf
@@ -84,7 +98,7 @@ class Dominance:
 		return estrella_rsquare
 
 	def Adjusted_McFadden_RSquare(self,columns):
-		log_clf=sm.Logit(self.data[self.target],self.data[columns])
+		log_clf=sm.Logit(self.data[self.target],self.data[cols])
 		result=log_clf.fit(disp=0)
 		llf=result.llf
 		llnull=result.llnull
@@ -156,7 +170,7 @@ class Dominance:
 		self.variable_stats=variable_stats
 		return self.variable_stats
 
-	def domiance_stats(self):
+	def dominance_stats(self):
 		tf=pd.DataFrame(self.variable_stats).T
 		tf['Interactional Dominance']=tf['conditional_dominance']
 		tf['Average Partial Dominance']=tf['partial_dominance'].apply(lambda x:np.mean(x))
@@ -171,9 +185,11 @@ class Dominance:
 	def get_top_k(self):
 		columns=list(self.data.columns.values)
 		columns.remove(self.target)
+		# remove intercept from top_k
 		if(self.objective):
 			top_k_vars=SelectKBest(f_regression, k=self.top_k)
 		else:
+			columns.remove('intercept')
 			top_k_vars=SelectKBest(chi2, k=self.top_k)
 		top_k_vars.fit_transform(self.data[columns], self.data[self.target])
 		return [columns[i] for i in top_k_vars.get_support(indices=True)]
@@ -193,17 +209,17 @@ class Dominance:
 		incremental_rsquare_df=pd.merge(left=incremental_rsquare_df1,right=incremental_rsquare_df2)
 		incremental_rsquare_df['percentage_incremental_r2']=incremental_rsquare_df['percentage_incremental_r2']*100
 
-		iplot(incremental_rsquare_df[['Features','incremental_r2']].set_index("Features").iplot(asFigure=True,kind='bar',title="Incremetal "+("Pseudo " if (self.objective!=1) else " ")+"R Square for Top "+ str(self.top_k) +" Variables ",yTitle="Incremental R2",xTitle="Estimators"))
-		iplot(incremental_rsquare_df[['Features','percentage_incremental_r2']].iplot(asFigure=True,kind='pie',title="Percentage Incremetal "+("Pseudo " if (self.objective!=1) else " ")+"R Square for Top "+ str(self.top_k) +" Variables ",values="percentage_incremental_r2",labels="Features"))
+		iplot(incremental_rsquare_df[['Features','incremental_r2']].set_index("Features").iplot(asFigure=True,kind='bar',title="Incremetal "+("Pseudo " if (self.objective!=1) else " ")+"R Squared for Top "+ str(self.top_k) +" Variables ",yTitle="Incremental R2",xTitle="Estimators"))
+		iplot(incremental_rsquare_df[['Features','percentage_incremental_r2']].iplot(asFigure=True,kind='pie',title="Percentage Relative Importance for Top "+ str(self.top_k) +" Variables ",values="percentage_incremental_r2",labels="Features"))
 
 	def incremental_rsquare(self):
 		# columns=list(self.data.columns.values)
 		# columns.remove(self.target)
 
 		## Calculating Incremental R2 for Top_K_Variables 
-		print("Selecting %s Best Parameters for the Model" %self.top_k)
+		print("Selecting %s Best Predictors for the Model" %self.top_k)
 		columns=self.get_top_k()
-		print("Selected Estimators : ",columns)
+		print("Selected Predictors : ",columns)
 		print()
 
 		print("Creating models for %s possible combinations of %s features :"%((2**len(columns))-1,len(columns)))
@@ -230,26 +246,53 @@ class Dominance:
 		return incrimental_r2
 
 	def complete_model_rsquare(self):
-		print("Selecting %s Best Parameters for the Model" %self.top_k)
+		print("Selecting %s Best Predictors for the Model" %self.top_k)
 		columns=self.get_top_k()
-		print("Selected Estimators : ",columns)
+		print("Selected Predictors : ",columns)
 		print()
 
 		if(self.objective==1):
-			print("*"*20," R-Square of Complete Model : ","*"*20)
+			print("*"*20," R-Squared of Complete Model : ","*"*20)
 			lin_reg=LinearRegression()
 			lin_reg.fit(self.data[columns],self.data[self.target])
 			r_squared=lin_reg.score(self.data[columns],self.data[self.target])
-			print("R Square : %s" %(r_squared))
+			print("R Squared : %s" %(r_squared))
 			print()
 		else:
-			print("*"*20," Pseudo R-Square of Complete Model : ","*"*20)
+			print("*"*20," Pseudo R-Squared of Complete Model : ","*"*20)
 			print()
-			print("MacFadden's R-Square : %s "%(self.McFadden_RSquare(columns)))
+			print("MacFadden's R-Squared : %s "%(self.McFadden_RSquare(columns)))
 			print()
-			print("Nagelkerke R-Square : %s "%(self.Nagelkerke_Rsquare(columns)))
+			print("Nagelkerke R-Squared : %s "%(self.Nagelkerke_Rsquare(columns)))
 			print()
-			print("Cox and Snell R-Square : %s "%(self.Cox_and_Snell_Rsquare(columns)))
+			print("Cox and Snell R-Squared : %s "%(self.Cox_and_Snell_Rsquare(columns)))
 			print()
-			print("Estrella R-Square : %s "%(self.Estrella(columns)))
+			print("Estrella R-Squared : %s "%(self.Estrella(columns)))
 			print()
+
+
+
+class Dominance_Datasets:
+	"""docstring for Dominance_Datasets"""
+	
+	@classmethod
+	def get_breast_cancer(cls):
+		print("""The copy of UCI ML Breast Cancer Wisconsin (Diagnostic) dataset is downloaded from: https://goo.gl/U2Uwz2""")
+		print("""Internally using load_breast_cancer function from sklearn.datasets """)
+		breast_cancer_data=pd.DataFrame(data=load_breast_cancer()['data'],columns=load_breast_cancer()['feature_names'])
+		breast_cancer_data['target']=load_breast_cancer()['target']
+		target_dict=dict({j for i,j in zip(load_breast_cancer()['target_names'],enumerate(load_breast_cancer()['target_names']))})
+		breast_cancer_data['target_names']=breast_cancer_data['target'].map(target_dict)
+		return breast_cancer_data.iloc[:,:-1]
+	
+	@classmethod
+	def get_boston(cls):
+		print("""The copy of Boston Housing Dataset is downloaded from: https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html""")
+		print("""Internally using load_boston function from sklearn.datasets """)
+		boston_data=pd.DataFrame(data=load_boston()['data'],columns=load_boston()['feature_names'])
+		boston_data['House_Price']=load_boston()['target']
+		return boston_data
+
+	def __init__(self):
+		print("Datasets for Dominance Analysis")
+		
