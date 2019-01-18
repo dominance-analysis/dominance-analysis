@@ -23,6 +23,8 @@ pip install dominance-analysis
   * objective : It can take value either 0 or 1. 0 for Classification and 1 for Regression. By default, the package will run for Regression.
   * pseudo_r2 : It can take one of the Pseudo R-Squared measures - "mcfadden","nagelkerke", "cox_and_snell" or "estrella", where default="mcfadden". It's not needed in case of regression (objective=1).
 
+<hr>
+
 ### Dominance Analysis - The Significance!
 
 Dominance Analysis, according to Azen and Budescu meets three important criteria for measuring relative importance. First, the technique should be defined in terms of its ability to reduce error in predicting the outcome variable. Next, it should permit direct comparison of measures within a model (that is, X<sub>1</sub> is twice as important as X<sub>2</sub>). Finally, the technique should permit inferences concerning an attribute's direct effect (that is, when considered by itself), total effect (that is, when considered with other attributes) and partial effect (that is, when considered with various combinations of other predictors). Hence, Dominance analysis is both robust and intuitive and its interpretation is also very straightforward.
@@ -47,6 +49,9 @@ The beauty of the math of Dominance Analysis is that the sum of the  overall ave
 <img src='images/PercentRel.jpg'>
 
 It can bee seen that the Percentage Relative Importance of predictors has been computed by dividing the Overall Average Incremental R<sup>2</sup> contribution of predictors by the R<sup>2</sup> of the complete model. This explains the intuitive nature of Dominance Analysis wherein the overall R<sup>2</sup> of the model can be attributed to individual predictors within the model.
+
+
+<hr>
 
 ### Pseudo R-Squared for Classification Task / Logistic Regression
 
