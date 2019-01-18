@@ -203,7 +203,7 @@ dominance_classification.dominance_stats()
 <img src='images/breast_cancer_data_dominance_stats.JPG'>
 
 ### Authors & License
-This package is released under MIT . Simple-Salesforce was originally written by Nick Catalano but most newer features and bugfixes come from community contributors. Pull requests submitted to the GitHub Repo are highly encouraged!
+This package is released under a MIT License. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/quintshekhar"> . Pull requests submitted to the GitHub Repo are highly encouraged!
 
 Authentication mechanisms were adapted from Dave Wingate's RestForce and licensed under a MIT license
 
