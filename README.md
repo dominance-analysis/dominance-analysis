@@ -101,11 +101,17 @@ Note: Since, Dominance Analysis is computationally intensive as it builds all su
 ### Dominance Statistics
 
 As described earlier, a relative importance measure should be able to describe a predictor's direct, total and partial effet, therefore in the Dominance Statistics, we have come up with four different types of Dominance measures. Below are the definition and interpretation of the measures:
-1. Interactional Dominance - This is the incremental R<sup>2</sup> contribution of the predictor to the complete model. If we have four predictors X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub> and X<sub>4</sub>, let R<sup>2</sup><sub>Y.X</sub> be 
 
+1. Interactional Dominance - This is the incremental R<sup>2</sup> contribution of the predictor to the complete model. Hence, the Interactional Dominance of a particular predictor 'X' will be the diffrence between the R<sup>2</sup> of the complete model and the R<sup>2</sup> of the model with all other predictors except the particular predictor 'X'. <br>
+If we have Y as the dependent variable and four predictors X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub> and X<sub>4</sub>, let  R<sup>2</sup><sub>Y.X<sub>1</sub>.X<sub>2</sub></sub> be the R<sup>2</sup> of the model between Y and X<sub>1</sub>, X<sub>2</sub> ;
+R<sup>2</sup><sub>Y.X<sub>1</sub>.X<sub>3</sub></sub> be the R<sup>2</sup> of the model between Y and X<sub>1</sub>, X<sub>3</sub> so on and so forth.
 2. Individual Dominance -
 3. Average Partial Dominance -
 4. Total Dominance -
+
+<img src='images/Dom Stat.jpg'>
+
+<img src='images/Dominance_Analysis.JPG'>
 
 <hr>
 
@@ -199,9 +205,18 @@ dominance_classification.dominance_stats()
 ```
 <img src='images/breast_cancer_data_dominance_stats.JPG'>
 
+<hr>
+
+### Authors & License
+The Dominance Analysis package is based on the concept developed by Azen and Budescu (see references). This package is released under a MIT License. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/bhagatsajan0073"> Sajan Bhagat</a> and <a href="https://github.com/Vibish"> Kunjithapatham Sivakumar</a> . Pull requests submitted to the GitHub Repo are highly encouraged!
+
+<hr>
+
 ### References
 1. Azen, R. (2000). Inference for predictor comparisons:Dominance analysis and the distribution of R<sup>2</sup> differences. Dissertation Abstracts International B, 61/10, 5616.
 2. Azen, R., Budescu, D. V., & Reiser, B. (2001). Criticality of predictors in multiple regression. British Journal of Mathematical and Statistical Psychology, 54, 201–225.
-3. Azen, R., Budescu, D. V. (2003). The Dominance Analysis Approach for Comparing Predictors in Multiple Regression. Psychological Methods, 2003, Vol. 8, No. 2, 129–148.
-4. Azen, R., Budescu, D. V. (2006). Comparing Predictors in Multivariate Regression Models: An Extension of Dominance Analysis. Journal of Educational and Behavioral Statistics Summer 2006, Vol. 31, No. 2, pp. 157-180.
-5. Azen, R., Traxel, N. (2009). Using Dominance Analysis to Determine Predictor Importance in Logistic Regression. Journal of Educational and Behavioral Statistics September 2009, Vol. 34, No. 3, pp. 319-347.
+3. Azen, R., Budescu, D. V. (2003). The Dominance Analysis Approach for Comparing Predictors in Multiple Regression. Psychological Methods, 2003, Vol. 8, No. 2, 129–148. https://doi.org/10.1037/1082-989X.8.2.129
+4. Azen, R., Budescu, D. V. (2006). Comparing Predictors in Multivariate Regression Models: An Extension of Dominance Analysis. Journal of Educational and Behavioral Statistics Summer 2006, Vol. 31, No. 2, pp. 157-180. https://doi.org/10.3102/10769986031002157
+5. Azen, R., Traxel, N. (2009). Using Dominance Analysis to Determine Predictor Importance in Logistic Regression. Journal of Educational and Behavioral Statistics September 2009, Vol. 34, No. 3, pp. 319-347. https://doi.org/10.3102/1076998609332754
+6. Budescu, D. V. (1993). Dominance analysis: A new approach to the problem of relative importance of predictors in multiple regression. Psychological Bulletin, 114(3), 542-551. https://doi.org/10.1037/0033-2909.114.3.542
+7. Luo, W., & Azen, R. (2013). Determining Predictor Importance in Hierarchical Linear Models Using Dominance Analysis. Journal of Educational and Behavioral Statistics, 38(1), 3-31. https://doi.org/10.3102/1076998612458319
