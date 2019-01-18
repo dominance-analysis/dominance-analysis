@@ -203,7 +203,7 @@ dominance_classification.dominance_stats()
 <img src='images/breast_cancer_data_dominance_stats.JPG'>
 
 ### Authors & License
-This package is released under a MIT License. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/quintshekhar"> . Pull requests submitted to the GitHub Repo are highly encouraged!
+This package is released under a MIT License. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/bhagatsajan0073"> Sajan Bhagat</a>,  <a href="https://github.com/Vibish"> Kunjithapatham Sivakumar</a> . Pull requests submitted to the GitHub Repo are highly encouraged!
 
 Authentication mechanisms were adapted from Dave Wingate's RestForce and licensed under a MIT license
 
