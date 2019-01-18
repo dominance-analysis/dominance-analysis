@@ -108,6 +108,8 @@ As described earlier, a relative importance measure should be able to describe a
 4. Total Dominance -
 
 <img src='images/Dom Stat.jpg'>
+
+<img src='images/Dom Stat.jpg'>
 <hr>
 
 *Complete code for below examples is available in example folder or the following public kernels on kaggle:
