@@ -109,7 +109,7 @@ As described earlier, a relative importance measure should be able to describe a
 
 <img src='images/Dom Stat.jpg'>
 
-<img src='images/Dom Stat.jpg'>
+<img src='images/Rel_Dom.jpg'>
 <hr>
 
 *Complete code for below examples is available in example folder or the following public kernels on kaggle:
