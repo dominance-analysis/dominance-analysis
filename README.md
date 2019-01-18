@@ -202,6 +202,12 @@ dominance_classification.dominance_stats()
 ```
 <img src='images/breast_cancer_data_dominance_stats.JPG'>
 
+### Authors & License
+This package is released under MIT . Simple-Salesforce was originally written by Nick Catalano but most newer features and bugfixes come from community contributors. Pull requests submitted to the GitHub Repo are highly encouraged!
+
+Authentication mechanisms were adapted from Dave Wingate's RestForce and licensed under a MIT license
+
+The latest build status can be found at Travis CI
 ### References
 1. Azen, R. (2000). Inference for predictor comparisons:Dominance analysis and the distribution of R<sup>2</sup> differences. Dissertation Abstracts International B, 61/10, 5616.
 2. Azen, R., Budescu, D. V., & Reiser, B. (2001). Criticality of predictors in multiple regression. British Journal of Mathematical and Statistical Psychology, 54, 201–225.
