@@ -207,9 +207,8 @@ dominance_classification.dominance_stats()
 ### Authors & License
 The Dominance Analysis package is based on the concept developed by Azen and Budescu (see references). This package is released under a MIT License. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/bhagatsajan0073"> Sajan Bhagat</a>,  <a href="https://github.com/Vibish"> Kunjithapatham Sivakumar</a> . Pull requests submitted to the GitHub Repo are highly encouraged!
 
-Authentication mechanisms were adapted from Dave Wingate's RestForce and licensed under a MIT license
+<hr>
 
-The latest build status can be found at Travis CI
 ### References
 1. Azen, R. (2000). Inference for predictor comparisons:Dominance analysis and the distribution of R<sup>2</sup> differences. Dissertation Abstracts International B, 61/10, 5616.
 2. Azen, R., Budescu, D. V., & Reiser, B. (2001). Criticality of predictors in multiple regression. British Journal of Mathematical and Statistical Psychology, 54, 201–225.
