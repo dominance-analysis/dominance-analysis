@@ -111,7 +111,7 @@ If we have four predictors X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub> and X<sub
 
 <img src='images/Dom Stat.jpg'>
 
-<img src='images/Rel_Dom.jpg'>
+<img src='images/dominance_analysis.jpg'>
 <hr>
 
 *Complete code for below examples is available in example folder or the following public kernels on kaggle:
