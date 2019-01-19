@@ -8,9 +8,5 @@ python:
 install:
   - pip install codecov
 
-script:
-  - coverage run dominance_analysis/dominance_analysis/dominance_analysis/test.py
-      
-
 after_success:
   - codecov
