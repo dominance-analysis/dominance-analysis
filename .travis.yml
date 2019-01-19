@@ -1,0 +1,17 @@
+# After changing this file, check it on:
+#   http://lint.travis-ci.org/
+language: python
+
+python:
+  - "3.5"
+  - "3.6"
+
+install:
+  - pip install codecov
+  - pip install dominance-analysis
+
+script:
+  - coverage run test.py
+
+after_success:
+  - codecov

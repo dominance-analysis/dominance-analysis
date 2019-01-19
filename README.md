@@ -1,5 +1,6 @@
 # Dominance-Analysis : A Python Library for Accurate and Intuitive Relative Importance of Predictors 
 [![Downloads](https://pepy.tech/badge/dominance-analysis)](https://pepy.tech/project/dominance-analysis) <img src='https://img.shields.io/github/license/bhagatsajan0073/dominance_analysis.svg'> <img src='https://img.shields.io/github/forks/bhagatsajan0073/dominance_analysis.svg'> <img src="https://img.shields.io/github/stars/bhagatsajan0073/dominance_analysis.svg">
+<img src="https://travis-ci.org/bhagatsajan0073/dominance_analysis.svg?branch=master" alt="Build Status" />
 
 *This package is designed to determine relative importance of predictors for both regression and classification models. The determination of relative importance depends on how one defines importance; Budescu (1993) and Azen and Budescu (2003) proposed using dominance analysis (DA) because it invokes a general and intuitive definition of "relative importance" that is based on the additional contribution of a predictor in all subset models. The purpose of determining predictor importance in the context of DA is not model selection but rather uncovering the individual contributions of the predictors.*
 
@@ -22,6 +23,8 @@ pip install dominance-analysis
   * top_k : No. of features to choose from all available features. By default, the package will run for top 15 features.
   * objective : It can take value either 0 or 1. 0 for Classification and 1 for Regression. By default, the package will run for Regression.
   * pseudo_r2 : It can take one of the Pseudo R-Squared measures - "mcfadden","nagelkerke", "cox_and_snell" or "estrella", where default="mcfadden". It's not needed in case of regression (objective=1).
+
+<hr>
 
 ### Dominance Analysis - The Significance!
 
@@ -47,6 +50,9 @@ The beauty of the math of Dominance Analysis is that the sum of the  overall ave
 <img src='images/PercentRel.jpg'>
 
 It can bee seen that the Percentage Relative Importance of predictors has been computed by dividing the Overall Average Incremental R<sup>2</sup> contribution of predictors by the R<sup>2</sup> of the complete model. This explains the intuitive nature of Dominance Analysis wherein the overall R<sup>2</sup> of the model can be attributed to individual predictors within the model.
+
+
+<hr>
 
 ### Pseudo R-Squared for Classification Task / Logistic Regression
 
@@ -104,7 +110,9 @@ As described earlier, a relative importance measure should be able to describe a
 
 1. Interactional Dominance - This is the incremental R<sup>2</sup> contribution of the predictor to the complete model. Hence, the Interactional Dominance of a particular predictor 'X' will be the diffrence between the R<sup>2</sup> of the complete model and the R<sup>2</sup> of the model with all other predictors except the particular predictor 'X'. <br>
 Consider a scenario when we have Y as the dependent variable and four predictors X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub> and X<sub>4</sub>, let  R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>2</sub></sub> be the R<sup>2</sup> of the model between Y and X<sub>1</sub>, X<sub>2</sub> ;
-R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>3</sub></sub> be the R<sup>2</sup> of the model between Y and X<sub>1</sub>, X<sub>3</sub> so on and so forth. In this case, the interactional dominance of predictor X<sub>1</sub> will be R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>2</sub>,X<sub>3</sub>,X<sub>4</sub></sub> - R<sup>2</sup><sub>Y.X<sub>2</sub>,X<sub>3</sub>,X<sub>4</sub></sub>.
+R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>3</sub></sub> be the R<sup>2</sup> of the model between Y and X<sub>1</sub>, X<sub>3</sub> so on and so forth. In this case, the interactional dominance of predictor X<sub>1</sub> will be R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>2</sub>,X<sub>3</sub>,X<sub>4</sub></sub> - R<sup>2</sup><sub>Y.X<sub>2</sub>,X<sub>3</sub>,X<sub>4</sub></sub>. <br>
+Hence, interactional dominance can be interpreted as the incremental impact or the dominance that a predictor has in presence of all other predictors.
+
 2. Individual Dominance -
 3. Average Partial Dominance -
 4. Total Dominance -
@@ -208,7 +216,7 @@ dominance_classification.dominance_stats()
 <hr>
 
 ### Authors & License
-The Dominance Analysis package is based on the concept developed by Azen and Budescu (see references). This package is released under a MIT License. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/bhagatsajan0073"> Sajan Bhagat</a> and <a href="https://github.com/Vibish"> Kunjithapatham Sivakumar</a> . Pull requests submitted to the GitHub Repo are highly encouraged!
+The Dominance Analysis package is based on the concept developed by Azen and Budescu (see references). This package is released under a <a href="dominance_analysis/LICENSE"> MIT License</a>. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/bhagatsajan0073"> Sajan Bhagat</a> and <a href="https://github.com/Vibish"> Kunjithapatham Sivakumar</a> . Pull requests submitted to the GitHub Repo are highly encouraged!
 
 <hr>
 
