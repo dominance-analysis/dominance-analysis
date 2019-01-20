@@ -1,7 +1,3 @@
-require 'coveralls'
-Coveralls.wear!
-
-
 from dominance_analysis.dominance import *
 
 def test_package_function():
