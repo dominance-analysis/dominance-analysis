@@ -3,7 +3,9 @@
 <a href="https://github.com/bhagatsajan0073/dominance_analysis/blob/master/LICENSE">
   <img src="https://img.shields.io/github/license/bhagatsajan0073/dominance_analysis.svg">
 </a>
-<img src='https://img.shields.io/github/forks/bhagatsajan0073/dominance_analysis.svg'> 
+<a href="https://github.com/bhagatsajan0073/dominance_analysis/network/members">
+  <img src="https://img.shields.io/github/forks/bhagatsajan0073/dominance_analysis.svg">
+</a>
 <a href="https://github.com/bhagatsajan0073/dominance_analysis/stargazers">
   <img src="https://img.shields.io/github/stars/bhagatsajan0073/dominance_analysis.svg">
 </a>
