@@ -9,7 +9,6 @@ python:
 install:
   - pip install codecov
   - pip install dominance-analysis
-  - pip install -r requirements.txt > /dev/null
   - pip install nose coverage
   - pip install coveralls
 
