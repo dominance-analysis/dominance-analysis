@@ -125,7 +125,7 @@ Hence, interactional dominance can be interpreted as the incremental impact or i
 2. **Individual Dominance -** The individual dominance of a predictor is the R<sup>2</sup> of the model between the dependent variable and the predictor. So, the individual dominanace of predictor X<sub>1</sub> will be R<sup>2</sup><sub>Y.X<sub>1</sub></sub>. <br>
 Hence, individual dominance can be interpreted as the variability explained by the predictor alone or the quantum of impact that a predictor will have in absence of all other predictors.
 
-3. **Average Partial Dominance -**
+3. **Average Partial Dominance -** This is average of average incremental R<sup>2</sup> contributions of the predictor to all subset models except complete model and bi-variate (when only one predcitor is present) model. Hence, this will be average of incremental R<sup>2</sup> contribution of the 
 4. **Total Dominance -**
 
 <img src='images/Dom Stat.jpg'>
