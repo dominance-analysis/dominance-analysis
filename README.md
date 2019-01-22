@@ -59,6 +59,7 @@ The measure for proportion of variance that we have used for regression is R<sup
 The beauty of the math of Dominance Analysis is that the sum of the  overall average incremental R<sup>2</sup> of all predictors is equal to the R<sup>2</sup> of the complete model (model with all predictors). Hence, the total R<sup>2</sup> can be attributed to each predictor in the model. Below is an illustration of Dominance Analysis in the Population for Hypothetical example with four predictors:
 
 <img src='images/PercentRel.jpg'>
+<p align="center"> Table 2</p>
 
 It can bee seen that the Percentage Relative Importance of predictors has been computed by dividing the Overall Average Incremental R<sup>2</sup> contribution of predictors by the R<sup>2</sup> of the complete model. This explains the intuitive nature of Dominance Analysis wherein the overall R<sup>2</sup> of the model can be attributed to individual predictors within the model.
 
@@ -137,9 +138,10 @@ than the other, that predictor is said to generally
 dominate the other.
 
 <img src='images/Dom Stat.jpg'>
+<p align="center"> Table 3</p>
 
 <img src='images/Dominance_Analysis.JPG'>
-
+<p align="center"> Table 4</p>
 <hr>
 
 *Complete code for below examples is available in example folder or the following public kernels on Kaggle:
