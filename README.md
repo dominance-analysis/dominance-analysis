@@ -122,8 +122,9 @@ Consider a scenario when we have Y as the dependent variable and four predictors
 R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>3</sub></sub> be the R<sup>2</sup> of the model between Y and X<sub>1</sub>, X<sub>3</sub> so on and so forth. In this case, the interactional dominance of predictor X<sub>1</sub> will be R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>2</sub>,X<sub>3</sub>,X<sub>4</sub></sub> - R<sup>2</sup><sub>Y.X<sub>2</sub>,X<sub>3</sub>,X<sub>4</sub></sub>. <br>
 Hence, interactional dominance can be interpreted as the incremental impact or incremental variability explained by the predictor or the dominance that a predictor has in presence of all other predictors.
 
-2. **Individual Dominance -** The individual dominance of a predictor is the R<sup>2</sup> of the model between the dependent variable and the predictor. So, the indivudual domianace of predictor X<sub>1</sub> will be R<sup>2</sup><sub>Y.X<sub>1</sub>.
-  Hence, 
+2. **Individual Dominance -** The individual dominance of a predictor is the R<sup>2</sup> of the model between the dependent variable and the predictor. So, the individual dominanace of predictor X<sub>1</sub> will be R<sup>2</sup><sub>Y.X<sub>1</sub></sub>. <br>
+Hence, individual dominance can be interpreted as the variability expalined by the predictor alone or the quantum of impact that a predictor will have in absence of all other predcitors.
+
 3. **Average Partial Dominance -**
 4. **Total Dominance -**
 
