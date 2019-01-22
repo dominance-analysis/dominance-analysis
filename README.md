@@ -131,15 +131,14 @@ Hence, individual dominance can be interpreted as the variability explained by t
 3. **Average Partial Dominance -** This is average of average incremental R<sup>2</sup> contributions of the predictor to all subset models except complete model and bi-variate (when only one predcitor is present) model. <br>
 Hence, this can be interpreted as the average impact that a predictor has when it is available in all possible combinations with other predictors except the combination when all predcitors are available.
 
-4. **Total Dominance -** The last measure of dominance summarizes the additional contributions of each predictor to all subset models by averaging all the conditional values. In this example, this consists of averaging the four averaged
-entries in each column of Table 4. If this overall av-
-eraged additional contribution is greater for one predictor
-than the other, that predictor is said to generally
-dominate the other.
+4. **Total Dominance -** The last measure of dominance summarizes the additional contributions of each predictor to all subset models by averaging all the conditional values. In the example on table 3, this consists of averaging the four averaged entries in each column. <br>
+
+In below table, we have illustrated the calculation used to arrive at the four measures of dominance.
 
 <img src='images/Dom Stat.jpg'>
 <p align="center"> Table 3</p>
-
+<br>
+If we calculate the four measures of dominance from the above example, we will get the following values
 <img src='images/Dominance_Analysis.JPG'>
 <p align="center"> Table 4</p>
 <hr>
