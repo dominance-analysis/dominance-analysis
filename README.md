@@ -1,6 +1,15 @@
 # Dominance-Analysis : A Python Library for Accurate and Intuitive Relative Importance of Predictors 
-[![Downloads](https://pepy.tech/badge/dominance-analysis)](https://pepy.tech/project/dominance-analysis) <img src='https://img.shields.io/github/license/bhagatsajan0073/dominance_analysis.svg'> <img src='https://img.shields.io/github/forks/bhagatsajan0073/dominance_analysis.svg'> <img src="https://img.shields.io/github/stars/bhagatsajan0073/dominance_analysis.svg">
-<img src="https://travis-ci.org/bhagatsajan0073/dominance_analysis.svg?branch=master" alt="Build Status" />
+[![Downloads](https://pepy.tech/badge/dominance-analysis)](https://pepy.tech/project/dominance-analysis) 
+<a href="https://github.com/bhagatsajan0073/dominance_analysis/blob/master/LICENSE">
+  <img src="https://img.shields.io/github/license/bhagatsajan0073/dominance_analysis.svg">
+</a>
+<a href="https://github.com/bhagatsajan0073/dominance_analysis/network/members">
+  <img src="https://img.shields.io/github/forks/bhagatsajan0073/dominance_analysis.svg">
+</a>
+<a href="https://github.com/bhagatsajan0073/dominance_analysis/stargazers">
+  <img src="https://img.shields.io/github/stars/bhagatsajan0073/dominance_analysis.svg">
+</a>
+[![Build](https://travis-ci.org/bhagatsajan0073/dominance_analysis.svg?branch=master)](https://travis-ci.org/bhagatsajan0073/dominance_analysis)
 
 *This package is designed to determine relative importance of predictors for both regression and classification models. The determination of relative importance depends on how one defines importance; Budescu (1993) and Azen and Budescu (2003) proposed using dominance analysis (DA) because it invokes a general and intuitive definition of "relative importance" that is based on the additional contribution of a predictor in all subset models. The purpose of determining predictor importance in the context of DA is not model selection but rather uncovering the individual contributions of the predictors.*
 
@@ -106,16 +115,16 @@ Note: Since, Dominance Analysis is computationally intensive as it builds all su
 
 ### Dominance Statistics
 
-As described earlier, a relative importance measure should be able to describe a predictor's direct, total and partial effet, therefore in the Dominance Statistics, we have come up with four different types of Dominance measures. Below are the definition and interpretation of the measures:
+As described earlier, a relative importance measure should be able to describe a predictor's direct, total and partial effet, therefore in the Dominance Statistics, we have come up with four different types of Dominance measures. **These measures have been conceptualized, defined and formulated by us and are unique to this library**. Below are the definitions and interpretations of the measures:
 
-1. Interactional Dominance - This is the incremental R<sup>2</sup> contribution of the predictor to the complete model. Hence, the Interactional Dominance of a particular predictor 'X' will be the diffrence between the R<sup>2</sup> of the complete model and the R<sup>2</sup> of the model with all other predictors except the particular predictor 'X'. <br>
+1. **Interactional Dominance** - This is the incremental R<sup>2</sup> contribution of the predictor to the complete model. Hence, the Interactional Dominance of a particular predictor 'X' will be the diffrence between the R<sup>2</sup> of the complete model and the R<sup>2</sup> of the model with all other predictors except the particular predictor 'X'. <br>
 Consider a scenario when we have Y as the dependent variable and four predictors X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub> and X<sub>4</sub>, let  R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>2</sub></sub> be the R<sup>2</sup> of the model between Y and X<sub>1</sub>, X<sub>2</sub> ;
 R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>3</sub></sub> be the R<sup>2</sup> of the model between Y and X<sub>1</sub>, X<sub>3</sub> so on and so forth. In this case, the interactional dominance of predictor X<sub>1</sub> will be R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>2</sub>,X<sub>3</sub>,X<sub>4</sub></sub> - R<sup>2</sup><sub>Y.X<sub>2</sub>,X<sub>3</sub>,X<sub>4</sub></sub>. <br>
-Hence, interactional dominance can be interpreted as the incremental impact or the dominance that a predictor has in presence of all other predictors.
+Hence, interactional dominance can be interpreted as the incremental impact or incremental variability explained by the predictor or the dominance that a predictor has in presence of all other predictors.
 
-2. Individual Dominance -
-3. Average Partial Dominance -
-4. Total Dominance -
+2. **Individual Dominance -**
+3. **Average Partial Dominance -**
+4. **Total Dominance -**
 
 <img src='images/Dom Stat.jpg'>
 
@@ -123,7 +132,7 @@ Hence, interactional dominance can be interpreted as the incremental impact or t
 
 <hr>
 
-*Complete code for below examples is available in example folder or the following public kernels on kaggle:
+*Complete code for below examples is available in example folder or the following public kernels on Kaggle:
 Regression - <a href="https://www.kaggle.com/iamsajanbhagat/dominance-analysis-on-boston-house-prices-dataset" target="_blank">Dominane Analysis on Boston House Price Data</a> &
 Classification- <a href="https://www.kaggle.com/iamsajanbhagat/dominance-analysis-on-breast-cancer-dataset" target="_blank"> Dominance Analysis on Breast Cancer Dataset</a>*
 
