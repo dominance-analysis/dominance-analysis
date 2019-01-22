@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/github/stars/bhagatsajan0073/dominance_analysis.svg">
 </a>
 [![Build](https://travis-ci.org/bhagatsajan0073/dominance_analysis.svg?branch=master)](https://travis-ci.org/bhagatsajan0073/dominance_analysis)
+[![Maintainability](https://api.codeclimate.com/v1/badges/97a8614c71d05ef05a3e/maintainability)](https://codeclimate.com/github/bhagatsajan0073/dominance_analysis/maintainability) [![Join the chat at https://gitter.im/dominance_analysis/community](https://badges.gitter.im/dominance_analysis/community.svg)](https://gitter.im/dominance_analysis/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 *This package is designed to determine relative importance of predictors for both regression and classification models. The determination of relative importance depends on how one defines importance; Budescu (1993) and Azen and Budescu (2003) proposed using dominance analysis (DA) because it invokes a general and intuitive definition of "relative importance" that is based on the additional contribution of a predictor in all subset models. The purpose of determining predictor importance in the context of DA is not model selection but rather uncovering the individual contributions of the predictors.*
 
@@ -49,7 +50,9 @@ Let's consider a scenario when we have 4 predictors; X<sub>1</sub>, X<sub>2</sub
 
 Below is the illustration of formulas used to compute the averaged additional contributions of X<sub>1</sub> and X<sub>2</sub> within model size in the poupulation with four predictors (We use the notation <img src='images/formula1.JPG'> to represent the proportion of variance in Y that is accounted for by the predictors in the model X. For example,<img src='images/formula2.JPG'> represents the proportion of variance in Y that is accounted for by the model consisting of X<sub>1</sub> and X<sub>3</sub>. The additional contribution of a given predictor is measured by the increase in proportion of variance that results from adding that predictor to the regression model):
 
-<img src='images/formulas.JPG'>
+<img src='images/formulas.JPG'> 
+<p align="center"> Table 1</p>
+
 
 The measure for proportion of variance that we have used for regression is R<sup>2</sup> but since we don't have R<sup>2</sup> in logsitic regression/classification models, we have used Pseudo R<sup>2</sup>.
 
@@ -57,6 +60,7 @@ The measure for proportion of variance that we have used for regression is R<sup
 The beauty of the math of Dominance Analysis is that the sum of the  overall average incremental R<sup>2</sup> of all predictors is equal to the R<sup>2</sup> of the complete model (model with all predictors). Hence, the total R<sup>2</sup> can be attributed to each predictor in the model. Below is an illustration of Dominance Analysis in the Population for Hypothetical example with four predictors:
 
 <img src='images/PercentRel.jpg'>
+<p align="center"> Table 2</p>
 
 It can bee seen that the Percentage Relative Importance of predictors has been computed by dividing the Overall Average Incremental R<sup>2</sup> contribution of predictors by the R<sup>2</sup> of the complete model. This explains the intuitive nature of Dominance Analysis wherein the overall R<sup>2</sup> of the model can be attributed to individual predictors within the model.
 
@@ -120,16 +124,24 @@ As described earlier, a relative importance measure should be able to describe a
 1. **Interactional Dominance** - This is the incremental R<sup>2</sup> contribution of the predictor to the complete model. Hence, the Interactional Dominance of a particular predictor 'X' will be the diffrence between the R<sup>2</sup> of the complete model and the R<sup>2</sup> of the model with all other predictors except the particular predictor 'X'. <br>
 Consider a scenario when we have Y as the dependent variable and four predictors X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub> and X<sub>4</sub>, let  R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>2</sub></sub> be the R<sup>2</sup> of the model between Y and X<sub>1</sub>, X<sub>2</sub> ;
 R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>3</sub></sub> be the R<sup>2</sup> of the model between Y and X<sub>1</sub>, X<sub>3</sub> so on and so forth. In this case, the interactional dominance of predictor X<sub>1</sub> will be R<sup>2</sup><sub>Y.X<sub>1</sub>,X<sub>2</sub>,X<sub>3</sub>,X<sub>4</sub></sub> - R<sup>2</sup><sub>Y.X<sub>2</sub>,X<sub>3</sub>,X<sub>4</sub></sub>. <br>
-Hence, interactional dominance can be interpreted as the incremental impact or incremental variability explained by the predictor or the dominance that a predictor has in presence of all other predictors.
+Hence, interactional dominance can be interpreted as the incremental impact or incremental variability explained by the predictor in presence of all other predictors.
 
-2. **Individual Dominance -**
-3. **Average Partial Dominance -**
-4. **Total Dominance -**
+2. **Individual Dominance -** The individual dominance of a predictor is the R<sup>2</sup> of the model between the dependent variable and the predictor. So, the individual dominanace of predictor X<sub>1</sub> will be R<sup>2</sup><sub>Y.X<sub>1</sub></sub>. <br>
+Hence, individual dominance can be interpreted as the variability explained by the predictor alone or the quantum of impact that a predictor will have in absence of all other predictors.
+
+3. **Average Partial Dominance -** This is average of average incremental R<sup>2</sup> contributions of the predictor to all subset models except complete model and bi-variate (when only one predcitor is present) model. <br>
+Hence, this can be interpreted as the average impact that a predictor has when it is available in all possible combinations with other predictors except the combination when all predcitors are available.
+
+4. **Total Dominance -** The last measure of dominance summarizes the additional contributions of each predictor to all subset models by averaging all the conditional values. In the example on table 3, this consists of averaging the four averaged entries in each column. <br>
+
+In below table, we have illustrated the calculation used to arrive at the four measures of dominance.
 
 <img src='images/Dom Stat.jpg'>
-
+<p align="center"> Table 3</p>
+<br>
+If we calculate the four measures of dominance from the above example, we will get the following values:
 <img src='images/Dominance_Analysis.JPG'>
-
+<p align="center"> Table 4</p>
 <hr>
 
 *Complete code for below examples is available in example folder or the following public kernels on Kaggle:
@@ -225,7 +237,7 @@ dominance_classification.dominance_stats()
 <hr>
 
 ### Authors & License
-The Dominance Analysis package is based on the concept developed by Azen and Budescu (see references). This package is released under a <a href="dominance_analysis/LICENSE"> MIT License</a>. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/bhagatsajan0073"> Sajan Bhagat</a> and <a href="https://github.com/Vibish"> Kunjithapatham Sivakumar</a> . Pull requests submitted to the GitHub Repo are highly encouraged!
+The Dominance Analysis package is based on the concept developed by Azen and Budescu (see references). This package is released under a <a href=https://github.com/bhagatsajan0073/dominance_analysis/blob/master/LICENSE> MIT License</a>. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/bhagatsajan0073"> Sajan Bhagat</a> and <a href="https://github.com/Vibish"> Kunjithapatham Sivakumar</a> . Pull requests submitted to the GitHub Repo are highly encouraged!
 
 <hr>
 
