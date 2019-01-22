@@ -49,7 +49,7 @@ Let's consider a scenario when we have 4 predictors; X<sub>1</sub>, X<sub>2</sub
 
 Below is the illustration of formulas used to compute the averaged additional contributions of X<sub>1</sub> and X<sub>2</sub> within model size in the poupulation with four predictors (We use the notation <img src='images/formula1.JPG'> to represent the proportion of variance in Y that is accounted for by the predictors in the model X. For example,<img src='images/formula2.JPG'> represents the proportion of variance in Y that is accounted for by the model consisting of X<sub>1</sub> and X<sub>3</sub>. The additional contribution of a given predictor is measured by the increase in proportion of variance that results from adding that predictor to the regression model):
 
-<img src='images/formulas.JPG'>
+<img src='images/formulas.JPG'> Table 1
 
 The measure for proportion of variance that we have used for regression is R<sup>2</sup> but since we don't have R<sup>2</sup> in logsitic regression/classification models, we have used Pseudo R<sup>2</sup>.
 
@@ -128,7 +128,11 @@ Hence, individual dominance can be interpreted as the variability explained by t
 3. **Average Partial Dominance -** This is average of average incremental R<sup>2</sup> contributions of the predictor to all subset models except complete model and bi-variate (when only one predcitor is present) model. <br>
 Hence, this can be interpreted as the average impact that a predictor has when it is available in all possible combinations with other predictors except the combination when all predcitors are available.
 
-4. **Total Dominance -**
+4. **Total Dominance -** The last measure of dominance summarizes the additional contributions of each predictor to all subset models by averaging all the conditional values. In this example, this consists of averaging the four averaged
+entries in each column of Table 4. If this overall av-
+eraged additional contribution is greater for one predictor
+than the other, that predictor is said to generally
+dominate the other.
 
 <img src='images/Dom Stat.jpg'>
 
