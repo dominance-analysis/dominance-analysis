@@ -1,2 +1,10 @@
 theme: jekyll-theme-cayman
 title: Welcome to Dominance-Analysis' Homepage!
+ - jekyll-feed
+ - jekyll-redirect-from
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-avatar
+ - jemoji
+ - jekyll-mentions
+ - jekyll-include-cache
