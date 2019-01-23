@@ -8,9 +8,9 @@ Welcome to Dominance-Analysis documentation!
 
 Dominance-Analysis is a Python package built for measuring relative importance of a predictor in a regression or a classification model.
 The package is currently compatible with Python 2.7, 3.5 and 3.6.
-You can find out more regarding the package in the `Official GitHub repository`_.
+You can find out more regarding the package in the `Official Dominance Analysis Documentation`_.
 
-.. _Official GitHub Repository: https://github.com/bhagatsajan0073/dominance-analysis/blob/master/README.md
+.. _Official Dominance Analysis Documentation: https://bhagatsajan0073.github.io/dominance-analysis/
 
 Contents:
 
