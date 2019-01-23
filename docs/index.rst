@@ -8,7 +8,7 @@ Welcome to Dominance-Analysis documentation!
 
 Dominance-Analysis is a Python package built for measuring relative importance of a predictor in a regression or a classification model.
 The package is currently compatible with Python 2.7, 3.5 and 3.6.
-You can find out more regarding the package in the `Official GitHub repository`_
+You can find out more regarding the package in the `Official GitHub repository`_.
 
 .. _Official GitHub Repository: https://github.com/bhagatsajan0073/dominance-analysis/blob/master/README.md
 
@@ -30,9 +30,9 @@ Authors & License
 -----------------
 
 This package is released under an open source MIT license. The Dominance Analysis package is based on the concept developed by
-Azen and Budescu. Pull requests submitted to the `GitHub Repo`_ are highly encouraged! Dominance Analysis Python package has been developed by  `Shashank Shekhar`_, `Sajan Bhagat`_ and `Kunjithapatham Sivakumar`_
+Azen and Budescu. Pull requests submitted to the `GitHub Repo`_ are highly encouraged! Dominance Analysis Python package has been developed by  `Shashank Shekhar`_, `Sajan Bhagat`_ and `Kunjithapatham Sivakumar`_.
 
-The latest build status can be found at `Travis CI`_
+The latest build status can be found at `Travis CI`_.
 
 .. _Shashank Shekhar: https://github.com/quintshekhar
 .. _Sajan Bhagat: https://github.com/bhagatsajan0073
