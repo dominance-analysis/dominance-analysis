@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/github/stars/bhagatsajan0073/dominance_analysis.svg">
 </a>
 [![Build](https://travis-ci.org/bhagatsajan0073/dominance_analysis.svg?branch=master)](https://travis-ci.org/bhagatsajan0073/dominance_analysis)
+[![Documentation Status](https://readthedocs.org/projects/dominance-analysis/badge/?version=latest)](https://dominance-analysis.readthedocs.io/en/latest/?badge=latest)
 [![Maintainability](https://api.codeclimate.com/v1/badges/97a8614c71d05ef05a3e/maintainability)](https://codeclimate.com/github/bhagatsajan0073/dominance_analysis/maintainability) [![Join the chat at https://gitter.im/dominance_analysis/community](https://badges.gitter.im/dominance_analysis/community.svg)](https://gitter.im/dominance_analysis/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 *This package is designed to determine relative importance of predictors for both regression and classification models. The determination of relative importance depends on how one defines importance; Budescu (1993) and Azen and Budescu (2003) proposed using dominance analysis (DA) because it invokes a general and intuitive definition of "relative importance" that is based on the additional contribution of a predictor in all subset models. The purpose of determining predictor importance in the context of DA is not model selection but rather uncovering the individual contributions of the predictors.*
