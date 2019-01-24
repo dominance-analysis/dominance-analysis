@@ -38,7 +38,7 @@ The latest build status can be found at `Travis CI`_.
 .. _Sajan Bhagat: https://github.com/bhagatsajan0073
 .. _Kunjithapatham Sivakumar: https://github.com/Vibish
 .. _GitHub Repo: https://github.com/bhagatsajan0073/dominance-analysis
-.. _Travis CI: https://travis-ci.org/bhagatsajan0073/dominance_analysis
+.. _Travis CI: https://travis-ci.org/bhagatsajan0073/dominance-analysis
 
 
 Indices and tables
