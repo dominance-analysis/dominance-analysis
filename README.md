@@ -147,7 +147,7 @@ If we calculate the four measures of dominance from the above example, we will g
 
 ### Dominance Levels
 The following three levels of dominance can be achieved between each pair of predictors in Dominance Analysis: 
-* Complete Dominance - One predictor is said to completely dominate another predictor if its dominance holds across all possible subset models (that do not include the two predictors under comparison). Back to the four-predictor model, for example, complete dominance of X<sub>1</sub></sub> over X<sub>2</sub></sub> is achieved if the additional R<sup>2</sup> contribution of X<sub>1</sub></sub> is more than that of X<sub>2</sub></sub> to the null model, the model consisting of X<sub>3</sub></sub>, the model consisting of X<sub>4</sub></sub>, and the model consisting of both X<sub>3</sub></sub> and X<sub>4</sub></sub>, respectively, as follows:
+* Complete Dominance - One predictor is said to completely dominate another predictor if its dominance holds across all possible subset models (that do not include the two predictors under comparison). Back to the four-predictor model, for example, complete dominance of X<sub>1</sub></sub> over X<sub>2</sub></sub> is achieved if the additional R<sup>2</sup> contribution of X<sub>1</sub></sub> is more than that of X<sub>2</sub></sub> to the null model, the model consisting of X<sub>3</sub></sub>, the model consisting of X<sub>4</sub></sub>, and the model consisting of both X<sub>3</sub></sub> and X<sub>4</sub></sub>. In the Table 3, we can see that incremental R<sup>2</sup> of X<sub>1</sub></sub>
 <br>
 
 
