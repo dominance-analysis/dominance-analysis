@@ -1,4 +1,4 @@
-# Dominance-Analysiss : A Python Library for Accurate and Intuitive Relative Importance of Predictors 
+# Dominance-Analysis : A Python Library for Accurate and Intuitive Relative Importance of Predictors 
 [![PyPI version](https://badge.fury.io/py/dominance-analysis.svg)](https://badge.fury.io/py/dominance-analysis)
 [![Downloads](https://pepy.tech/badge/dominance-analysis)](https://pepy.tech/project/dominance-analysis) 
 <a href="https://github.com/bhagatsajan0073/dominance_analysis/blob/master/LICENSE">
