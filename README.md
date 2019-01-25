@@ -144,6 +144,11 @@ In below table, we have illustrated the calculation used to arrive at the four m
 If we calculate the four measures of dominance from the above example, we will get the following values:
 <img src='images/Dominance_Analysis.JPG'>
 <p align="center"> Table 4</p>
+
+### Dominance Levels
+There are three levels of dominance that can be achieved between each pair of predictors in Dominance Analysis: complete dominance, conditional dominance, and general dominance. One predictor is said to completely dominate another predictor if its dominance holds across all possible subset models (that do not include the two predictors under comparison). Back to the four-predictor model, for example, complete dominance of X<sub>1</sub></sub> over X<sub>2</sub></sub> is achieved if the additional R<sup>2</sup> contribution of X<sub>1</sub></sub> is more than that of X<sub>2</sub></sub> to the null model, the model consisting of X<sub>3</sub></sub>, the model consisting of X<sub>4</sub></sub>, and the model consisting of both X<sub>3</sub></sub> and X<sub>4</sub></sub>, respectively, as follows:
+
+
 <hr>
 
 *Complete code for below examples is available in example folder or the following public kernels on Kaggle:
