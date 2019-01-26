@@ -150,9 +150,10 @@ The following three levels of dominance can be achieved between each pair of pre
 * **Complete Dominance** - One predictor is said to completely dominate another predictor if its dominance holds across all possible subset models (that do not include the two predictors under comparison). Back to the four-predictor model, for example, complete dominance of X<sub>1</sub> over X<sub>2</sub> is achieved if the additional R<sup>2</sup> contribution of X<sub>1</sub> is more than that of X<sub>2</sub> to the null model, the model consisting of X<sub>3</sub>, the model consisting of X<sub>4</sub>, and the model consisting of both X<sub>3</sub> and X<sub>4</sub>. In Table 3, we can see that incremental R<sup>2</sup> of X<sub>1</sub> is greater than that of X<sub>2</sub> for all subset models and hence X<sub>1</sub> completely dominates X<sub>2</sub>.
 <br> If the additional contributions are inconsistent in favoring the same predictor across all subset models, then complete dominance is undetermined while weaker levels of dominance may still be achieved. 
 * **Conditional Dominance** - If a predictor’s averaged additional contribution within each model size is greater than that of another predictor, then the first predictor is said to conditionally dominate the latter. Here, the model size is indicated by the number of predictors included in a given model. If a predictor’s averaged additional contribution is greater for some model sizes but not for all, then conditional dominance between the two predictors cannot be established.
-* **General Dominance** -
+* **General Dominance** - If overall averaged additional R<sup>2</sup> contribution of one predictor is greater than the other then that predictor is said to generally dominate the other. <br>
 
-
+The three levels of dominance (complete, conditional,and general) are related to each other in a hierarchical fashion: Complete dominance implies conditional dominance, which, in turn, implies general dominance. However, for p > 3 the converse may not
+hold; that is, general dominance does not imply conditional dominance and conditional dominance does not necessarily imply complete dominance.
 
 <hr>
 
