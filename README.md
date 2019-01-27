@@ -197,6 +197,8 @@ dominance_regression.plot_incremental_rsquare()
 <hr>
 <img src='images/pie_boston_house_price.png'>
 <hr>
+<img src='images/WaterFall_Boston.png'>
+<hr>
 
 
 **Dominance Statistics (R-Squared)**
@@ -260,6 +262,8 @@ dominance_classification.dominance_stats()
 <img src='images/breast_cancer_data_dominance_stats.JPG'>
 
 <hr>
+
+**Dominance Level**
 
 ```
 dominance_classification.dominance_level()
