@@ -205,6 +205,14 @@ dominance_regression.dominance_stats()
 ```
 <img src='images/housing_data_dominance_stats.JPG'>
 
+<hr>
+
+
+**Dominance Level**
+```
+dominance_regression.dominance_level()
+```
+<img src='images/Dominance_Level_Boston.JPG'>
 
 <hr>
 
@@ -241,6 +249,8 @@ dominance_classification.plot_incremental_rsquare()
 <hr>
 <img src='images/pie_breast_cancer_latest.png'>
 <hr>
+<img src='images/WaterFall_Breast_Cancer.png'>
+<hr>
 
 
 **Dominance Statistics (R-Squared)**
@@ -248,6 +258,13 @@ dominance_classification.plot_incremental_rsquare()
 dominance_classification.dominance_stats()
 ```
 <img src='images/breast_cancer_data_dominance_stats.JPG'>
+
+<hr>
+
+```
+dominance_classification.dominance_level()
+```
+<img src='images/Dominance_Level_Breast_Cancer.JPG'>
 
 <hr>
 
