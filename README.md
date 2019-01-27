@@ -268,7 +268,7 @@ dominance_classification.dominance_stats()
 ```
 dominance_classification.dominance_level()
 ```
-<img src='images/Dominance_Level_Breast_Cancer.JPG'>
+<img src='images/Dominance_Levels_Breast_Cancer.JPG'>
 
 <hr>
 
