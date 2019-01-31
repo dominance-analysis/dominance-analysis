@@ -10,7 +10,6 @@
 <a href="https://github.com/bhagatsajan0073/dominance_analysis/network/members">
   <img src="https://img.shields.io/github/forks/bhagatsajan0073/dominance_analysis.svg">
 </a>
-
 [![Build Status](https://travis-ci.org/bhagatsajan0073/dominance-analysis.svg?branch=master)](https://travis-ci.org/bhagatsajan0073/dominance-analysis)
 [![Build Status](https://dev.azure.com/shashanksist/shashank_sist/_apis/build/status/bhagatsajan0073.dominance-analysis?branchName=master)](https://dev.azure.com/shashanksist/shashank_sist/_build?definitionId=2)
 [![Build status](https://ci.appveyor.com/api/projects/status/t3w0hs7bhragnvbi?svg=true)](https://ci.appveyor.com/project/bhagatsajan0073/dominance-analysis)
