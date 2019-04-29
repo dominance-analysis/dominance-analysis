@@ -273,6 +273,98 @@ dominance_classification.dominance_level()
 
 <hr>
 
+
+### User Guide for computing Relative Importance when a Correlation Matrix is provided
+
+**Using Boston Housing Dataset downloaded from: https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html**
+
+**Getting R<sup>2</sup> of the Complete Model**
+
+```
+from dominance_analysis import Dominance_Datasets
+from dominance_analysis import Dominance
+boston_dataset=Dominance_Datasets.get_boston()
+corr_data = boston_dataset.corr()
+dominance_regression=Dominance(data=corr_data,target='House_Price',data_format=1)
+``` 
+<img src='images/Housing_Data_Corr_Dominance.PNG'>
+
+<hr>
+
+**Incremental R-Squared**
+```
+incr_variable_rsquare=dominance_regression.incremental_rsquare()
+```
+<img src='images/Housing_Data_Correlation_Model_Training.PNG'>
+
+<hr>
+
+**Plot Incremental R-Squared and the Dominance Curve**
+```
+dominance_regression.plot_incremental_rsquare()
+```
+<img src='images/bar_boston_house_price_corr.png'>
+<hr>
+<img src='images/pie_boston_house_price_corr.png'>
+<hr>
+<img src='images/WaterFall_Boston_corr.png'>
+<hr>
+
+
+**Dominance Statistics (R-Squared)**
+```
+dominance_regression.dominance_stats()
+```
+<img src='images/housing_data_corr_dominance_stats.PNG'>
+
+<hr>
+
+
+### User Guide for computing Relative Importance when a Covariance Matrix is provided
+
+**Using Boston Housing Dataset downloaded from: https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html**
+
+**Getting R<sup>2</sup> of the Complete Model**
+
+```
+from dominance_analysis import Dominance_Datasets
+from dominance_analysis import Dominance
+boston_dataset=Dominance_Datasets.get_boston()
+cov_data = boston_dataset.cov()
+dominance_regression=Dominance(data=cov_data,target='House_Price',data_format=2)
+``` 
+<img src='images/Housing_Data_Covariance_Dominance.PNG'>
+
+<hr>
+
+**Incremental R-Squared**
+```
+incr_variable_rsquare=dominance_regression.incremental_rsquare()
+```
+<img src='images/Housing_Data_Covariance_Model_Training.PNG'>
+
+<hr>
+
+**Plot Incremental R-Squared and the Dominance Curve**
+```
+dominance_regression.plot_incremental_rsquare()
+```
+<img src='images/bar_boston_house_price_cov.png'>
+<hr>
+<img src='images/pie_boston_house_price_cov.png'>
+<hr>
+<img src='images/WaterFall_Boston_cov.png'>
+<hr>
+
+
+**Dominance Statistics (R-Squared)**
+```
+dominance_regression.dominance_stats()
+```
+<img src='images/housing_data_cov_dominance_stats.PNG'>
+
+<hr>
+
 ### Authors & License
 The Dominance Analysis package is based on the concept developed by Azen and Budescu (see references). This package is released under a <a href="https://github.com/bhagatsajan0073/dominance_analysis/blob/master/LICENSE"> MIT License</a>. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/bhagatsajan0073"> Sajan Bhagat</a>, <a href="https://github.com/Vibish"> Kunjithapatham Sivakumar</a> and <a href="https://github.com/balakolluri"> Bala Koteshwar Kolluri</a> . Pull requests submitted to the GitHub Repo are highly encouraged!
 
