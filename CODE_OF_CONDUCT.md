@@ -35,7 +35,7 @@ This Code of Conduct applies both within project spaces and in public spaces whe
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [bhagat.sajan0073@gmail.com](mailto:bhagat.sajan0073@gmail.com) or [quintshekhar@gmail.com](mailto:quintshekhar@gmail.com) 
-or [s.vibish@gmail.com](mailto:s.vibish@gmail.com). All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
+or [s.vibish@gmail.com](mailto:s.vibish@gmail.com) or [balakoteshwar@gmail.com](mailto:balakoteshwar@gmail.com). All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
 Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
 
 ## Attribution
