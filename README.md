@@ -274,7 +274,7 @@ dominance_classification.dominance_level()
 <hr>
 
 ### Authors & License
-The Dominance Analysis package is based on the concept developed by Azen and Budescu (see references). This package is released under a <a href="https://github.com/bhagatsajan0073/dominance_analysis/blob/master/LICENSE"> MIT License</a>. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/bhagatsajan0073"> Sajan Bhagat</a> and <a href="https://github.com/Vibish"> Kunjithapatham Sivakumar</a> . Pull requests submitted to the GitHub Repo are highly encouraged!
+The Dominance Analysis package is based on the concept developed by Azen and Budescu (see references). This package is released under a <a href="https://github.com/bhagatsajan0073/dominance_analysis/blob/master/LICENSE"> MIT License</a>. Dominance Analysis Python package has been developed by <a href="https://github.com/quintshekhar"> Shashank Shekhar</a>, <a href="https://github.com/bhagatsajan0073"> Sajan Bhagat</a>, <a href="https://github.com/Vibish"> Kunjithapatham Sivakumar</a> and <a href="https://github.com/balakolluri"> Bala Koteshwar Kolluri</a> . Pull requests submitted to the GitHub Repo are highly encouraged!
 
 <hr>
 
