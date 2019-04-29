@@ -27,17 +27,23 @@ init_notebook_mode(connected=True)
 
 class Dominance:
 	"""docstring for ClassName"""
-	def __init__(self,data,target,top_k=None,objective=1,pseudo_r2='mcfadden'):
+	def __init__(self,data,target,top_k=None,objective=1,pseudo_r2='mcfadden',data_format = 0): # Bala changes
 		# super(ClassName, self).__init__()
 		self.data = data
 		self.target=target
 		self.objective=objective
-		if(self.objective==0):
-			self.data['intercept']=1
-		self.top_k=top_k if top_k else min((len(self.data.columns)-1),15)
-		self.pseudo_r2=pseudo_r2
-		assert (self.top_k >1 ) and (self.top_k<(len(self.data.columns))),"Value of top_k ranges from 1 to n-1 !"
+#Bala changes start        
+		self.data_format = data_format
+		if(self.data_format==0):
+#Bala changes end            
+			if(self.objective==0):
+				self.data['intercept']=1
+			self.top_k=top_k if top_k else min((len(self.data.columns)-1),15)
+			self.pseudo_r2=pseudo_r2
+			assert (self.top_k >1 ) and (self.top_k<(len(self.data.columns))),"Value of top_k ranges from 1 to n-1 !"
 		self.complete_model_rsquare()
+
+            
 
 	
 	def conditional_dominance(self,model_rsquares,model_features_k,model_features_k_minus_1,columns):
@@ -263,13 +269,11 @@ class Dominance:
 			columns=['Percentage Relative Importance', 'running_total', 'y_start', 'label_pos'],index=["net"])
 		
 		df = df.append(df_net)
-		# print(df)
 
 		df['color'] = '#1de9b6'
-		df.loc[df['Percentage Relative Importance'] < 100, 'color'] = '#29b6f6'
+		df.loc[df['Percentage Relative Importance'] == 100, 'color'] = '#29b6f6'
 		df.loc[df['Percentage Relative Importance'] < 0, 'label_pos'] = df.label_pos - 10000
 		df["bar_label"] = df["Percentage Relative Importance"].map('{:,.1f}'.format)
-		# df.to_csv("./Waterfall.csv")
 
 		TOOLS = "reset,save"
 		source = ColumnDataSource(df)
@@ -306,18 +310,22 @@ class Dominance:
 
 
 		incremental_rsquare_df=pd.merge(left=incremental_rsquare_df1,right=incremental_rsquare_df2)
-		incremental_rsquare_df['percentage_incremental_r2']=incremental_rsquare_df['percentage_incremental_r2']*100
-
-		iplot(incremental_rsquare_df[['Features','incremental_r2']].set_index("Features").iplot(asFigure=True,kind='bar',title="Incremetal "+("Pseudo " if (self.objective!=1) else " ")+"R Squared for Top "+ str(self.top_k) +" Variables ",yTitle="Incremental R2",xTitle="Estimators"))
-		iplot(incremental_rsquare_df[['Features','percentage_incremental_r2']].iplot(asFigure=True,kind='pie',title="Percentage Relative Importance for Top "+ str(self.top_k) +" Variables ",values="percentage_incremental_r2",labels="Features"))
-
+		incremental_rsquare_df['percentage_incremental_r2']=incremental_rsquare_df['percentage_incremental_r2']*100       
+#Bala changes start        
+		if(self.data_format==0):
+			iplot(incremental_rsquare_df[['Features','incremental_r2']].set_index("Features").iplot(asFigure=True,kind='bar',title="Incremetal "+("Pseudo " if (self.objective!=1) else " ")+"R Squared for Top "+ str(self.top_k) +" Variables ",yTitle="Incremental R2",xTitle="Estimators"))
+			iplot(incremental_rsquare_df[['Features','percentage_incremental_r2']].iplot(asFigure=True,kind='pie',title="Percentage Relative Importance for Top "+ str(self.top_k) +" Variables ",values="percentage_incremental_r2",labels="Features"))
+		else:
+			iplot(incremental_rsquare_df[['Features','incremental_r2']].set_index("Features").iplot(asFigure=True,kind='bar',title="Incremetal "+("Pseudo " if (self.objective!=1) else " ")+"R Squared of " +" Variables ",yTitle="Incremental R2",xTitle="Estimators"))
+			iplot(incremental_rsquare_df[['Features','percentage_incremental_r2']].iplot(asFigure=True,kind='pie',title="Percentage Relative Importance of " +" Variables ",values="percentage_incremental_r2",labels="Features"))
+#Bala changes end#Bala changes end
 		self.plot_waterfall_relative_importance(incremental_rsquare_df[['Features','percentage_incremental_r2']])
 
 	def predict_general_dominance(self):
 		general_dominance=[]
 		l=list(self.dominance_stats().index)
 		for index,i in enumerate(l):
-		    general_dominance.append({"Predictors":i,"Dominating":l[index+1:]})
+			general_dominance.append({"Predictors":i,"Dominating":l[index+1:]})
 
 		return pd.DataFrame(general_dominance)[['Predictors','Dominating']]
 
@@ -326,7 +334,7 @@ class Dominance:
 		general_dominance=[]
 		l=list(self.dominance_stats().index)
 		for index,i in enumerate(l):
-		    general_dominance.append({"Predictors":i,"Dominating":l[index+1:]})
+			general_dominance.append({"Predictors":i,"Dominating":l[index+1:]})
 
 		conditinal_dominance=[]    
 		for x in general_dominance:
@@ -365,41 +373,35 @@ class Dominance:
 		cds=self.complete_dominance_stats
 		# print(conditional_dominant_predictors)
 
-		if(len(conditional_dominant_predictors)>0):
-			for i in conditional_dominant_predictors:
-				# print(i,conditional_dominance_df)
-				dominating=conditional_dominance_df[conditional_dominance_df['Predictors']==i]['Dominating'].values[0]
-				complete_dominance=True
-				for j in [p for p in list(cds.keys()) if p !='interactional_dominance']:
-					if(j=='individual_dominance'):
-						if(sum(cds[j][i]>[cds[j][key] for key in dominating])!=len(dominating)):
-							complete_dominance=False
-							break
-					else:
-						search_index=[]
-						for k in dominating:
-							if(complete_dominance):
-								for key in cds[j][i].keys():
-									l=list(set(predictors)-set(key.split(" "))-set([i]))
-									[search_index.append((i,key,c)) for c in l]
-						
-						search_index=list(set(search_index))
-						
+		for i in conditional_dominant_predictors:
+			# print(i,conditional_dominance_df)
+			dominating=conditional_dominance_df[conditional_dominance_df['Predictors']==i]['Dominating'].values[0]
+			complete_dominance=True
+			for j in [p for p in list(cds.keys()) if p !='interactional_dominance']:
+				if(j=='individual_dominance'):
+					if(sum(cds[j][i]>[cds[j][key] for key in dominating])!=len(dominating)):
+						complete_dominance=False
+						break
+				else:
+					search_index=[]
+					for k in dominating:
 						if(complete_dominance):
-							for search in search_index:
-								# print(search[0],search[1],search[2],cds[j][search[0]][search[1]],cds[j][search[2]][search[1]])
-								if(cds[j][search[0]][search[1]]<cds[j][search[2]][search[1]]):
-									complete_dominance=False
-									break
+							for key in cds[j][i].keys():
+								l=list(set(predictors)-set(key.split(" "))-set([i]))
+								[search_index.append((i,key,c)) for c in l]
+					
+					search_index=list(set(search_index))
+					
+					if(complete_dominance):
+						for search in search_index:
+							# print(search[0],search[1],search[2],cds[j][search[0]][search[1]],cds[j][search[2]][search[1]])
+							if(cds[j][search[0]][search[1]]<cds[j][search[2]][search[1]]):
+								complete_dominance=False
+								break
 
-				cd_df.append({"Predictors":i,"Dominating":dominating})
-		
-			return pd.DataFrame(cd_df)[['Predictors','Dominating']]
-		else:
-			return pd.DataFrame({
-					"Predictors":predictors,
-					"Dominating" :[None for predictor in predictors]
-				})[['Predictors','Dominating']]
+			cd_df.append({"Predictors":i,"Dominating":dominating})
+		    
+		return pd.DataFrame(cd_df)[['Predictors','Dominating']]
 
 	def dominance_level(self):
 		gen_dom=self.predict_general_dominance()
@@ -418,14 +420,25 @@ class Dominance:
 		# columns.remove(self.target)
 
 		## Calculating Incremental R2 for Top_K_Variables 
-		print("Selecting %s Best Predictors for the Model" %self.top_k)
-		columns=self.get_top_k()
-		print("Selected Predictors : ",columns)
-		print()
-
-		print("Creating models for %s possible combinations of %s features :"%((2**len(columns))-1,len(columns)))
-		model_rsquares=self.model_stats()
-
+		if(self.data_format==0): #Bala changes
+			print("Selecting %s Best Predictors for the Model" %self.top_k)
+			columns=self.get_top_k()
+			print("Selected Predictors : ",columns)
+			print()
+			print("Creating models for %s possible combinations of %s features :"%((2**len(columns))-1,len(columns)))
+			model_rsquares=self.model_stats()
+#Bala changes starts
+		else:
+			if(self.data_format == 2):
+				columns = list(self.data.columns.values)
+				d = np.sqrt(self.data.values.diagonal())   
+				corr_array = ((self.data.values.T/d).T)/d
+				self.data = pd.DataFrame(data=corr_array,index=columns)
+				self.data.columns = columns
+			model_rsquares=self.Dominance_correlation()
+			columns=list(self.data.columns.values)
+			columns.remove(self.target)
+#Bala changes ends
 		print("#"*25," Model Training Done!!!!! ", "#"*25)
 		print()
 		print("#"*25," Calculating Variable Dominances ", "#"*25)
@@ -447,33 +460,77 @@ class Dominance:
 		return incrimental_r2
 
 	def complete_model_rsquare(self):
-		print("Selecting %s Best Predictors for the Model" %self.top_k)
-		columns=self.get_top_k()
-		print("Selected Predictors : ",columns)
+		if(self.data_format==0): #Bala changes
+			print("Selecting %s Best Predictors for the Model" %self.top_k)
+			columns=self.get_top_k()
+			print("Selected Predictors : ",columns)
+			print()
+
+			if(self.objective==1):
+				print("*"*20," R-Squared of Complete Model : ","*"*20)
+				lin_reg=LinearRegression()
+				lin_reg.fit(self.data[columns],self.data[self.target])
+				r_squared=lin_reg.score(self.data[columns],self.data[self.target])
+				print("R Squared : %s" %(r_squared))
+				print()
+			else:
+				print("*"*20," Pseudo R-Squared of Complete Model : ","*"*20)
+				print()
+				
+				if(self.pseudo_r2=='mcfadden'):
+					print("MacFadden's R-Squared : %s "%(self.McFadden_RSquare(columns)))
+				elif(pseudo_r2=='nagelkerke'):
+					print("Nagelkerke R-Squared : %s "%(self.Nagelkerke_Rsquare(columns)))
+				elif(pseudo_r2=='cox_and_snell'):
+					print("Cox and Snell R-Squared : %s "%(self.Cox_and_Snell_Rsquare(columns)))
+				else:
+					print("Estrella R-Squared : %s "%(self.Estrella(columns)))
+				print()
+#Bala changes start
+		else:
+			if(self.data_format == 2):
+				columns = list(self.data.columns.values)
+				d = np.sqrt(self.data.values.diagonal())   
+				corr_array = ((self.data.values.T/d).T)/d
+				self.data = pd.DataFrame(data=corr_array,index=columns)
+				self.data.columns = columns
+				print()
+			columns=list(self.data.columns.values)
+			columns.remove(self.target)
+			corr_all_matrix=self.data.loc[columns,[self.target]]
+			corr_pred_matrix = self.data.loc[columns,columns]
+			corr_pred_matrix_inverse = pd.DataFrame(np.linalg.pinv(corr_pred_matrix.values), corr_pred_matrix.columns, corr_pred_matrix.index)
+			beta = corr_pred_matrix_inverse.dot(corr_all_matrix)
+			corr_all_matrix_transpose = corr_all_matrix.transpose()
+			r_squared = corr_all_matrix_transpose.dot(beta)
+			print("R Squared : %s" %(r_squared.iloc[0,0]))
+			print()
+#Bala changes ends
+
+#Bala changes starts
+	def Dominance_correlation(self):
+    ## Calculating Incremental R2 from Correlation Matrix
+		columns=list(self.data.columns.values)
+		columns.remove(self.target)
+		print("Predictors : ",columns)
 		print()
 
-		if(self.objective==1):
-			print("*"*20," R-Squared of Complete Model : ","*"*20)
-			lin_reg=LinearRegression()
-			lin_reg.fit(self.data[columns],self.data[self.target])
-			r_squared=lin_reg.score(self.data[columns],self.data[self.target])
-			print("R Squared : %s" %(r_squared))
-			print()
-		else:
-			print("*"*20," Pseudo R-Squared of Complete Model : ","*"*20)
-			print()
-			
-			if(self.pseudo_r2=='mcfadden'):
-				print("MacFadden's R-Squared : %s "%(self.McFadden_RSquare(columns)))
-			elif(pseudo_r2=='nagelkerke'):
-				print("Nagelkerke R-Squared : %s "%(self.Nagelkerke_Rsquare(columns)))
-			elif(pseudo_r2=='cox_and_snell'):
-				print("Cox and Snell R-Squared : %s "%(self.Cox_and_Snell_Rsquare(columns)))
-			else:
-				print("Estrella R-Squared : %s "%(self.Estrella(columns)))
-			
-			print()
-
+		print("Calculating R2 for %s possible combinations of %s features :"%((2**len(columns))-1,len(columns)))
+		model_combinations=self.model_features_combination(columns)
+		model_rsquares={}
+		for i in tqdm(model_combinations):
+			for j in i:
+				model_combinations = list(j)
+				corr_all_matrix = self.data.loc[model_combinations,[self.target]]
+				corr_pred_matrix = self.data.loc[model_combinations,model_combinations]
+				corr_pred_matrix_inverse = pd.DataFrame(np.linalg.pinv(corr_pred_matrix.values), corr_pred_matrix.columns, corr_pred_matrix.index)
+				beta = corr_pred_matrix_inverse.dot(corr_all_matrix)
+				corr_all_matrix_transpose = corr_all_matrix.transpose()
+				r_square = corr_all_matrix_transpose.dot(beta)
+				model_rsquares[" ".join(model_combinations)]=r_square.iloc[0,0]
+		self.model_rsquares=model_rsquares
+		return self.model_rsquares
+#Bala changes ends
 
 class Dominance_Datasets:
 	"""docstring for Dominance_Datasets"""
@@ -499,3 +556,4 @@ class Dominance_Datasets:
 	def __init__(self):
 		print("Datasets for Dominance Analysis")
 		
+
