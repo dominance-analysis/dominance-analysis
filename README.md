@@ -319,6 +319,14 @@ dominance_regression.dominance_stats()
 
 <hr>
 
+**Dominance Level**
+
+```
+dominance_classification.dominance_level()
+```
+<img src='images/Dominance_Level_Boston_Correlation.PNG'>
+
+<hr>
 
 ### User Guide for computing Relative Importance when a Covariance Matrix is provided
 
@@ -362,6 +370,15 @@ dominance_regression.plot_incremental_rsquare()
 dominance_regression.dominance_stats()
 ```
 <img src='images/housing_data_cov_dominance_stats.PNG'>
+
+<hr>
+
+**Dominance Level**
+
+```
+dominance_classification.dominance_level()
+```
+<img src='images/Dominance_Level_Boston_Covariance.PNG'>
 
 <hr>
 
