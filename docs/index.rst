@@ -30,7 +30,7 @@ Contents
    
    Introduction <Introduction> 
    Dominance Statistics <Dominance-Statistics>
-   Parameter <Parameters>
+   Parameters <Parameters>
    
 Authors & License
 =============================================
