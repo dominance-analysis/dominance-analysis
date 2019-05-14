@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to Dominance-Analysis documentation!
-=============================================
+################################################
 
 Dominance-Analysis is a Python package built for accurately determining the relative importance of interacting predictors in a statistical model. The variable's individual effect as well as its effect in the presence of other variables is accounted for in identifying its proportionate contribution to the model. 
 
@@ -39,7 +39,7 @@ Use the following command to install the package:
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
-
+----------------------
 .. toctree::
    :maxdepth: 1
 
