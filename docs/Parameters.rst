@@ -25,7 +25,7 @@ This page contains descriptions of the important parameters in the Dominance-Ana
      
      ``1`` when correlation matrix (correlation of predictors with target variable) is being passed,
      
-     ``2`` when covraiance matrix (covariance of predictors with target variable) is being passed. 
+     ``2`` when covariance matrix (covariance of predictors with target variable) is being passed. 
      
-     By default, the package will run for raw data (``data_format`` = ``0``). This parameter is not needed in case of classification.
+     By default, the package will run for raw data (``data_format`` = ``0``). This parameter is not needed in case of Classification models.
 
