@@ -1,4 +1,4 @@
-About Dominance Analysis
+Introduction to Dominance Analysis
 =============================================
 
 Dominance-Analysis is a Python library built for accurately determining the relative importance of interacting predictors in a statistical model. The variable's individual effect as well as its effect in the presence of other variables is accounted for in identifying its proportionate contribution to the model. 
