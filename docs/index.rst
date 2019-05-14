@@ -6,7 +6,7 @@
 Welcome to Dominance-Analysis documentation!
 ################################################
 
-Dominance-Analysis is a Python library developed to arrive at accurate and intuitive relative importance of predictors.The library can be used for dominance analysis or Shapley Value Regression for finding relative importance of predictors on a given dataset. This library can also be used for key driver analysis or marginal resource allocation models.
+Dominance-Analysis is a Python library developed to arrive at accurate and intuitive relative importance of predictors. The library can be used for dominance analysis or Shapley Value Regression for finding relative importance of predictors on a given dataset. This library can also be used for key driver analysis or marginal resource allocation models.
 
 
 ********
@@ -18,6 +18,7 @@ Contents
    
    Introduction <Introduction> 
    Dominance Statistics <Dominance-Statistics>
+   Dominance Levels <Dominance-Levels>
    Parameters <Parameters>
    Examples <https://github.com/bhagatsajan0073/dominance-analysis/tree/master/examples>
 
