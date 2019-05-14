@@ -6,22 +6,7 @@
 Welcome to Dominance-Analysis documentation!
 ################################################
 
-Dominance-Analysis is a Python package built for accurately determining the relative importance of interacting predictors in a statistical model. The variable's individual effect as well as its effect in the presence of other variables is accounted for in identifying its proportionate contribution to the model. 
-
-The library can be used in combination with Principal Component Analysis (PCA) or Factor Analysis or any other feature reduction algorithm for getting accurate and intutive importance of predictors. The purpose of determining predictor importance in the context of Dominance Analysis is not model selection but rather uncovering the individual contributions of the predictors. 
-
-The library can be used for key driver analysis or marginal resource allocation models and helps marketers answer many questions like 
-
-- Which marketing touchpoints in a sales journey have the most impact on conversions.
-- Which subgroup prevalence differences in complex surveys are most important.
-- Which aspects of a service influence how likely a customer would recommend a company to others.
-
-Package Features
-----------------------------------------------
-- Evaluates predictor importance when the analysis is either in the form of Ordinary Least Squares Regression or the Logistic Regression. 
-- Allows performing Dominance Analysis even in the cases where only the Covariance/Correlation matrix of the predictor variables is available.
-- Provides the user the flexibility to choose number of top predictors that they want to compute relative importance for.
-- Provides Complete, Conditional and General dominance analysis for models.
+Dominance-Analysis is a Python library developed to arrive at accurate and intuitive relative importance of predictors.The library can be used for dominance analysis or Shapley Value Regression for finding relative importance of predictors on a given dataset. This library can also be used for key driver analysis or marginal resource allocation models.
 
 The package is currently compatible with Python 2.7, 3.5 and 3.6.
 
@@ -39,16 +24,13 @@ Use the following command to install the package:
 ********
 Contents
 ********
-.. toctree::
-   :maxdepth: 1
-   :caption: 
 
 .. toctree::
    :maxdepth: 1
-
+   
+   About Dominance Analysis <Introduction> 
    Dominance Statistics <Dominance-Statistics>
-   Our Approach <Our-Approach>
-   Examples <Examples>
+   Code Structure <Code-Structure>
    
 Authors & License
 =============================================
@@ -67,11 +49,4 @@ The latest build status can be found at `Travis CI`_.
 .. _GitHub Repo: https://github.com/bhagatsajan0073/dominance-analysis
 .. _Travis CI: https://travis-ci.org/bhagatsajan0073/dominance-analysis
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
