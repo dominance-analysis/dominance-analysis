@@ -31,6 +31,7 @@ Contents
    Introduction <Introduction> 
    Dominance Statistics <Dominance-Statistics>
    Parameters <Parameters>
+   Examples <https://github.com/bhagatsajan0073/dominance-analysis/tree/master/examples>
    
 Authors & License
 =============================================
