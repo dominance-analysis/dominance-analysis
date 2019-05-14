@@ -36,10 +36,13 @@ Use the following command to install the package:
 
 ``pip install dominance-analysis`` 
 
+********
+Contents
+********
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
-----------------------
+   :caption: 
+
 .. toctree::
    :maxdepth: 1
 
