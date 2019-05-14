@@ -8,6 +8,19 @@ Welcome to Dominance-Analysis documentation!
 
 Dominance-Analysis is a Python library developed to arrive at accurate and intuitive relative importance of predictors.The library can be used for dominance analysis or Shapley Value Regression for finding relative importance of predictors on a given dataset. This library can also be used for key driver analysis or marginal resource allocation models.
 
+
+********
+Contents
+********
+
+.. toctree::
+   :maxdepth: 1
+   
+   Introduction <Introduction> 
+   Dominance Statistics <Dominance-Statistics>
+   Parameters <Parameters>
+   Examples <https://github.com/bhagatsajan0073/dominance-analysis/tree/master/examples>
+
 The package is currently compatible with Python 2.7, 3.5 and 3.6.
 
 You can find out more regarding the package in the `Official Dominance Analysis Documentation`_.
@@ -21,18 +34,6 @@ Use the following command to install the package:
 
 ``pip install dominance-analysis`` 
 
-********
-Contents
-********
-
-.. toctree::
-   :maxdepth: 1
-   
-   Introduction <Introduction> 
-   Dominance Statistics <Dominance-Statistics>
-   Parameters <Parameters>
-   Examples <https://github.com/bhagatsajan0073/dominance-analysis/tree/master/examples>
-   
 Authors & License
 =============================================
 
