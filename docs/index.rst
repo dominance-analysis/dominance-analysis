@@ -38,7 +38,9 @@ Use the following command to install the package:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
+   :caption: 
+   
+   Contents:
 
 .. toctree::
    :maxdepth: 1
