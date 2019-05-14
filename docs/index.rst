@@ -28,7 +28,7 @@ Contents
 .. toctree::
    :maxdepth: 1
    
-   About Dominance Analysis <Introduction> 
+   Introduction <Introduction> 
    Dominance Statistics <Dominance-Statistics>
    Code Structure <Code-Structure>
    
