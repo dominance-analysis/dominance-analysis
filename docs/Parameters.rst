@@ -1,7 +1,22 @@
-Parameters
-===========================
+Installation Guide
+=============================================
 
-This page contains descriptions of the important parameters in the Dominance-Analysis package.
+Use the following command to install the package:
+
+.. code-block:: python
+   
+   pip install dominance-analysis
+   
+The ``dominance-analysis`` pakage can then be invoked through the below code.
+
+.. code-block:: python
+   
+   dominance_regression=Dominance(data=df_data,target='Target',objective=0,pseudo_r2="mcfadden",data_format=0)
+
+Parameters   
+--------------------------------------------
+
+The descriptions of the parameters to be passed to the Dominance class are provided below.
 
 -  ``data`` 
    -  Complete Dataset, should be a Pandas DataFrame
