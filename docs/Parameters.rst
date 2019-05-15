@@ -1,4 +1,4 @@
-Installation Guide
+Installation and User Guide
 =============================================
 
 Use the following command to install the package:
@@ -12,6 +12,8 @@ The ``dominance-analysis`` pakage can then be invoked through the below code.
 .. code-block:: python
    
    dominance_classification=Dominance(data=df_data,target='Target',objective=0,pseudo_r2="mcfadden",data_format=0)
+   
+The overall R-square of the complete model will be displayed as an output.
 
 Parameters   
 --------------------------------------------
@@ -44,3 +46,43 @@ The descriptions of the parameters to be passed to the Dominance class are provi
      
      By default, the package will run for raw data (i.e. ``data_format`` = ``0``). This parameter is not needed in case of Classification models.
 
+
+User Guide
+--------------------------------------
+
+The package has the below functions that can be used for performing Dominance Analysis and coming up with visualizations that help understand the variable significance and dominance levels.
+
+.. list-table:: **class Dominance**
+   :widths: 50 50
+   :header-rows: 1
+
+   * - Function
+     - Utility
+   * - ``incremental_rsquare()``
+     - The function will evaluate the Overall Average Incremental R-square contribution of the predictors to the R-square of the complete model.
+   * - ``plot_incremental_rsquare()``
+     - The function will plot the Incremental R-square contribution of the predictors in the form visulaizations like Bar Graph, Pie Chart and Waterfall chart.
+   * - ``dominance_stats()``
+     - The function will give the Dominance Statistics for each of the predictor variables.
+   * - ``dominance_level()``
+     - For each predictor variable, the function will clearly list out all the predictors that are dominated generally, conditionally and completely by it. 
+   * - ``complete_model_rsquare()``
+     - The function will print the R-squared value of the complete model.
+     
+.. list-table:: **class Dominance_Datasets**
+   :widths: 50 50
+   :header-rows: 1
+
+   * - Function
+     - Utility
+   * - ``get_breast_cancer()``
+     - The function will fetch the `UCI ML Breast Cancer Wisconsin (Diagnostic) dataset`_, in the form of a Pandas dataframe, to be able to use it for Dominance Analysis. The response variable in this case is continuos.
+   * - ``get_boston()``
+     - The function will fetch the `Boston Housing Dataset dataset`_, in the form of a Pandas dataframe, to be able to use it for Dominance Analysis. The response variable in this case is binary.
+
+
+You can find a more detailed information and examples regarding the package in the `Official Dominance Analysis Documentation`_.
+
+.. _UCI ML Breast Cancer Wisconsin (Diagnostic) dataset: https://goo.gl/U2Uwz2
+.. _Boston Housing Dataset dataset: https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html
+.. _Official Dominance Analysis Documentation: https://bhagatsajan0073.github.io/dominance-analysis/
