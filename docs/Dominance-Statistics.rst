@@ -18,7 +18,7 @@ The below example explains how each of these measures of dominance are arrived a
   :width: 600
 
 
-The measures of dominance calculated for the above predictors can be seen below.
+The measures of dominance calculated for these predictors can be seen below.
 
 .. image:: /images/Dominance_Analysis.JPG
   :width: 600
