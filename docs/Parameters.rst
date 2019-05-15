@@ -25,7 +25,7 @@ The descriptions of the parameters to be passed to the Dominance class are provi
 -  ``top_k`` 
    -  No. of features to choose from all available features. By default, the package will run for top 15 features.
 -  ``objective`` 
-   -  It can take value either 0 or 1.
+   -  It can take the values 0 or 1.
      ``0`` for Classification 
      
      ``1`` for Regression
