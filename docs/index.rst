@@ -34,7 +34,9 @@ Installation
 Use the following command to install the package:
 
 .. code-block:: python
-   pip install dominance-analysis 
+   
+   pip install dominance-analysis
+   pygments_style = 'sphinx'
 
 Authors & License
 =============================================
