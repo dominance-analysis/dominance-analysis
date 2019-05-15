@@ -11,7 +11,7 @@ The ``dominance-analysis`` pakage can then be invoked through the below code.
 
 .. code-block:: python
    
-   dominance_regression=Dominance(data=df_data,target='Target',objective=0,pseudo_r2="mcfadden",data_format=0)
+   dominance_classification=Dominance(data=df_data,target='Target',objective=0,pseudo_r2="mcfadden",data_format=0)
 
 Parameters   
 --------------------------------------------
