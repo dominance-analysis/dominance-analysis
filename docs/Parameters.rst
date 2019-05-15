@@ -32,9 +32,9 @@ The descriptions of the parameters to be passed to the Dominance class are provi
      
      By default, the package will run for Regression.
 -  ``pseudo_r2`` 
-   -  It can take one of the Pseudo R-Squared measures - ``mcfadden``, ``nagelkerke`` , ``cox_and_snell`` or ``estrella``, where default = ``mcfadden``. It is not needed in case of regression (objective= ``1`` ).
+   -  It can take one of the Pseudo R-Squared measures - ``mcfadden``, ``nagelkerke`` , ``cox_and_snell`` or ``estrella``, where default = ``mcfadden``. It is not needed in the case of regression models (i.e. ``objective`` = ``1`` ).
 -  ``data_format`` 
-   -  It can take value 0, 1 or 2.
+   -  It can take the values 0, 1 or 2.
      
      ``0`` when raw data is being passed,
      
@@ -42,5 +42,5 @@ The descriptions of the parameters to be passed to the Dominance class are provi
      
      ``2`` when covariance matrix (covariance of predictors with target variable) is being passed. 
      
-     By default, the package will run for raw data (``data_format`` = ``0``). This parameter is not needed in case of Classification models.
+     By default, the package will run for raw data (i.e. ``data_format`` = ``0``). This parameter is not needed in case of Classification models.
 
