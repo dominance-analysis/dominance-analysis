@@ -54,6 +54,7 @@ User Guide
 The package has the below functions that can be used for performing Dominance Analysis and coming up with visualizations that help understand the variable significance and dominance levels.
 
 **class Dominance**
+
 .. list-table:: 
    :widths: 50 50
    :header-rows: 1
@@ -72,6 +73,7 @@ The package has the below functions that can be used for performing Dominance An
      - The function will print the R-squared value of the complete model.
 
 **class Dominance_Datasets**
+
 .. list-table:: 
    :widths: 50 50
    :header-rows: 1
