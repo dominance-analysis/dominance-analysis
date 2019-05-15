@@ -19,7 +19,7 @@ Contents
    Introduction <Introduction> 
    Dominance Statistics <Dominance-Statistics>
    Dominance Levels <Dominance-Levels>
-   Installation Guide <Parameters>
+   Installation and User Guide <Parameters>
    Examples <https://github.com/bhagatsajan0073/dominance-analysis/tree/master/examples>
 
 The package is currently compatible with Python 2.7, 3.5 and 3.6.
