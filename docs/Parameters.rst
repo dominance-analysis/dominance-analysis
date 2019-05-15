@@ -46,14 +46,15 @@ The descriptions of the parameters to be passed to the Dominance class are provi
      
      By default, the package will run for raw data (i.e. ``data_format`` = ``0``). This parameter is not needed in case of Classification models.
 
-**Note:** While passing a Covariance / Correlation matrix to the function, it is advisable to pass the matrix of a dataset having 15 or lesser predictor variables.
+**Note:** While passing a Covariance / Correlation matrix to ``dominance-analysis`` , it is advisable to pass the matrix of a dataset having 15 or lesser predictor variables.
 
 User Guide
 --------------------------------------
 
 The package has the below functions that can be used for performing Dominance Analysis and coming up with visualizations that help understand the variable significance and dominance levels.
 
-.. list-table:: **class Dominance**
+**class Dominance**
+.. list-table:: 
    :widths: 50 50
    :header-rows: 1
 
@@ -69,8 +70,9 @@ The package has the below functions that can be used for performing Dominance An
      - For each predictor variable, the function will clearly list out all the predictors that are dominated generally, conditionally and completely by it. 
    * - ``complete_model_rsquare()``
      - The function will print the R-squared value of the complete model.
-     
-.. list-table:: **class Dominance_Datasets**
+
+**class Dominance_Datasets**
+.. list-table:: 
    :widths: 50 50
    :header-rows: 1
 
