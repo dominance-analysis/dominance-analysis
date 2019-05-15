@@ -14,11 +14,11 @@ In order to intuitively determine the dominance of one predictor over another, D
 
 The below example explains how each of these measures of dominance are arrived at.
 
-.. image:: images/Dom_Stat.jpg
-  :width: 400
+.. image:: https://github.com/bhagatsajan0073/dominance-analysis/blob/master/images/Dom_Stat.jpg
+  :width: 600
 
 
 The measures of dominance calculated for the above predictors can be seen below.
 
-.. image:: images/Dominance_Analysis.JPG
-  :width: 400
+.. image:: https://github.com/bhagatsajan0073/dominance-analysis/blob/master/images/Dominance_Analysis.JPG
+  :width: 600
