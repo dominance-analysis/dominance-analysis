@@ -46,6 +46,7 @@ The descriptions of the parameters to be passed to the Dominance class are provi
      
      By default, the package will run for raw data (i.e. ``data_format`` = ``0``). This parameter is not needed in case of Classification models.
 
+**Note:** While passing a Covariance / Correlation matrix to the function, it is advisable to pass the matrix of a dataset having 15 or lesser predictor variables.
 
 User Guide
 --------------------------------------
