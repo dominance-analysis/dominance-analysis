@@ -33,7 +33,8 @@ Installation
 
 Use the following command to install the package:
 
-``pip install dominance-analysis`` 
+.. code-block:: python
+   pip install dominance-analysis 
 
 Authors & License
 =============================================
