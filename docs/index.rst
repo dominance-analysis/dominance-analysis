@@ -19,7 +19,7 @@ Contents
    Introduction <Introduction> 
    Dominance Statistics <Dominance-Statistics>
    Dominance Levels <Dominance-Levels>
-   Parameters <Parameters>
+   Installation Guide <Parameters>
    Examples <https://github.com/bhagatsajan0073/dominance-analysis/tree/master/examples>
 
 The package is currently compatible with Python 2.7, 3.5 and 3.6.
@@ -27,15 +27,6 @@ The package is currently compatible with Python 2.7, 3.5 and 3.6.
 You can find out more regarding the package in the `Official Dominance Analysis Documentation`_.
 
 .. _Official Dominance Analysis Documentation: https://bhagatsajan0073.github.io/dominance-analysis/
-
-Installation
-=============================================
-
-Use the following command to install the package:
-
-.. code-block:: python
-   
-   pip install dominance-analysis
    
 
 Authors & License
