@@ -2,14 +2,14 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.7.0
+      - image: circleci/python:3.6
     steps:
       - checkout
       - run: pip install dominance-analysis
         
   test:
     docker:
-      - image: circleci/python:3.7.0
+      - image: circleci/python:3.6
     steps:
       - checkout
       - run: pip install dominance-analysis
