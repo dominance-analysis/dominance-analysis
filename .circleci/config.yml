@@ -6,7 +6,6 @@ jobs:
     steps:
       - checkout
       - run: 
-      command:
         pip install codecov
         pip install dominance-analysis
         pip install nose coverage
@@ -17,7 +16,6 @@ jobs:
     steps:
       - checkout
       - run:
-      command:
         pip install codecov
         pip install dominance-analysis
         pip install nose coverage
