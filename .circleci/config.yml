@@ -1,20 +1,30 @@
-language: python
-
-python:
-  - "2.7"
-  - "3.5"
-  - "3.6"
-
-install:
-  - pip install codecov
-  - pip install dominance-analysis
-  - pip install nose coverage
-  - pip install coveralls
-
-
-script:
-  - coverage run test.py
-  
-after_success:
-  - coveralls
-  - codecov
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.7.0
+    steps:
+      - checkout
+      - run: 
+      command: |
+        pip install codecov
+        pip install dominance-analysis
+        pip install nose coverage
+        pip install coveralls
+  test:
+    docker:
+      - image: circleci/python:3.7.0
+    steps:
+      - checkout
+      - run:
+      command: |
+        pip install codecov
+        pip install dominance-analysis
+        pip install nose coverage
+        pip install coveralls
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
