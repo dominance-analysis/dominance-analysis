@@ -6,6 +6,63 @@
 Welcome to Dominance-Analysis documentation!
 ################################################
 
+|pypi package|  |downloads|  |license|  |stars|  |forks|  |build-status|  |azure|  |build|  |docs|  |maintainability|  |chat|
+
+.. |pypi package| image:: https://badge.fury.io/py/dominance-analysis.svg
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://badge.fury.io/py/dominance-analysis
+	
+.. |downloads| image:: https://pepy.tech/badge/dominance-analysis
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://pepy.tech/project/dominance-analysis
+    
+.. |license| image:: https://img.shields.io/github/license/bhagatsajan0073/dominance_analysis.svg
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://github.com/bhagatsajan0073/dominance_analysis/blob/master/LICENSE
+	
+.. |stars| image:: https://img.shields.io/github/stars/bhagatsajan0073/dominance_analysis.svg
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://github.com/bhagatsajan0073/dominance_analysis/stargazers
+	
+.. |forks| image:: https://img.shields.io/github/forks/bhagatsajan0073/dominance_analysis.svg
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://github.com/bhagatsajan0073/dominance_analysis/network/members
+    
+.. |build-status| image:: https://img.shields.io/travis/rtfd/readthedocs.org.svg?style=flat
+    :alt: build status
+    :scale: 100%
+    :target: https://travis-ci.org/bhagatsajan0073/dominance-analysis
+
+.. |docs| image:: https://readthedocs.org/projects/docs/badge/?version=latest
+    :alt: Documentation Status
+    :scale: 100%
+    :target: https://dominance-analysis.readthedocs.io/en/latest/?badge=latest
+    
+.. |azure| image:: https://dev.azure.com/shashanksist/shashank_sist/_apis/build/status/bhagatsajan0073.dominance-analysis?branchName=master
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://dev.azure.com/shashanksist/shashank_sist/_build?definitionId=2
+    
+.. |build| image:: https://dev.azure.com/shashanksist/shashank_sist/_apis/build/status/bhagatsajan0073.dominance-analysis?branchName=master
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://ci.appveyor.com/project/bhagatsajan0073/dominance-analysis
+    
+.. |maintainability| image:: https://api.codeclimate.com/v1/badges/97a8614c71d05ef05a3e/maintainability
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://codeclimate.com/github/bhagatsajan0073/dominance_analysis/maintainability
+    
+.. |chat| image:: https://badges.gitter.im/dominance_analysis/community.svg
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://gitter.im/dominance_analysis/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
 Dominance-Analysis is a Python library developed to arrive at accurate and intuitive relative importance of predictors. The library can be used for dominance analysis or Shapley Value Regression for finding relative importance of predictors on a given dataset. This library can also be used for key driver analysis or marginal resource allocation models.
 
 
