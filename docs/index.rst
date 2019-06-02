@@ -21,22 +21,22 @@ Welcome to Dominance-Analysis documentation!
 .. |license| image:: https://img.shields.io/github/license/bhagatsajan0073/dominance_analysis.svg
     :alt: Test coverage
     :scale: 100%
-    :target: https://github.com/bhagatsajan0073/dominance_analysis/blob/master/LICENSE
+    :target: https://github.com/dominance-analysis/dominance_analysis/blob/master/LICENSE
 	
 .. |stars| image:: https://img.shields.io/github/stars/bhagatsajan0073/dominance_analysis.svg
     :alt: Test coverage
     :scale: 100%
-    :target: https://github.com/bhagatsajan0073/dominance_analysis/stargazers
+    :target: https://github.com/dominance-analysis/dominance_analysis/stargazers
 	
 .. |forks| image:: https://img.shields.io/github/forks/bhagatsajan0073/dominance_analysis.svg
     :alt: Test coverage
     :scale: 100%
-    :target: https://github.com/bhagatsajan0073/dominance_analysis/network/members
+    :target: https://github.com/dominance-analysis/dominance_analysis/network/members
     
 .. |build-status| image:: https://img.shields.io/travis/rtfd/readthedocs.org.svg?style=flat
     :alt: build status
     :scale: 100%
-    :target: https://travis-ci.org/bhagatsajan0073/dominance-analysis
+    :target: https://travis-ci.org/dominance-analysis/dominance-analysis
 
 .. |docs| image:: https://readthedocs.org/projects/docs/badge/?version=latest
     :alt: Documentation Status
@@ -51,12 +51,12 @@ Welcome to Dominance-Analysis documentation!
 .. |build| image:: https://dev.azure.com/shashanksist/shashank_sist/_apis/build/status/bhagatsajan0073.dominance-analysis?branchName=master
     :alt: Test coverage
     :scale: 100%
-    :target: https://ci.appveyor.com/project/bhagatsajan0073/dominance-analysis
+    :target: https://ci.appveyor.com/project/dominance-analysis/dominance-analysis
     
 .. |maintainability| image:: https://api.codeclimate.com/v1/badges/97a8614c71d05ef05a3e/maintainability
     :alt: Test coverage
     :scale: 100%
-    :target: https://codeclimate.com/github/bhagatsajan0073/dominance_analysis/maintainability
+    :target: https://codeclimate.com/github/dominance-analysis/dominance_analysis/maintainability
     
 .. |chat| image:: https://badges.gitter.im/dominance_analysis/community.svg
     :alt: Test coverage
