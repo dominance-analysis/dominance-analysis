@@ -77,13 +77,13 @@ Contents
    Dominance Statistics <Dominance-Statistics>
    Dominance Levels <Dominance-Levels>
    Installation and User Guide <Parameters>
-   Examples <https://github.com/bhagatsajan0073/dominance-analysis/tree/master/examples>
+   Examples <https://github.com/dominance-analysis/dominance-analysis/tree/master/examples>
 
 The package is currently compatible with Python 2.7, 3.5 and 3.6.
 
 You can find out more regarding the package in the `Official Dominance Analysis Documentation`_.
 
-.. _Official Dominance Analysis Documentation: https://bhagatsajan0073.github.io/dominance-analysis/
+.. _Official Dominance Analysis Documentation: https://dominance-analysis.github.io/dominance-analysis/
    
 
 Authors & License
@@ -100,7 +100,7 @@ The latest build status can be found at `Travis CI`_.
 .. _Sajan Bhagat: https://github.com/bhagatsajan0073
 .. _Kunjithapatham Sivakumar: https://github.com/Vibish
 .. _Bala Koteshwar Kolluri: https://github.com/balakolluri
-.. _GitHub Repo: https://github.com/bhagatsajan0073/dominance-analysis
-.. _Travis CI: https://travis-ci.org/bhagatsajan0073/dominance-analysis
+.. _GitHub Repo: https://github.com/dominance-analysis/dominance-analysis
+.. _Travis CI: https://travis-ci.org/dominance-analysis/dominance-analysis
 
 
