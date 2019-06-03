@@ -48,7 +48,7 @@ Welcome to Dominance-Analysis documentation!
     :scale: 100%
     :target: https://dev.azure.com/shashanksist/shashank_sist/_build?definitionId=2
     
-.. |build| image:: https://dev.azure.com/shashanksist/shashank_sist/_apis/build/status/bhagatsajan0073.dominance-analysis?branchName=master
+.. |build| image:: https://ci.appveyor.com/api/projects/status/t3w0hs7bhragnvbi?svg=true
     :alt: Test coverage
     :scale: 100%
     :target: https://ci.appveyor.com/project/dominance-analysis/dominance-analysis
