@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/github/forks/bhagatsajan0073/dominance_analysis.svg">
 </a>
 [![Build Status](https://travis-ci.org/dominance-analysis/dominance-analysis.svg?branch=master)](https://travis-ci.org/dominance-analysis/dominance-analysis)
-[![Build Status](https://dev.azure.com/shashanksist/shashank_sist/_apis/build/status/dominance-analysis.dominance-analysis?branchName=master)](https://dev.azure.com/shashanksist/shashank_sist/_build?definitionId=2)
+[![Build Status](https://dev.azure.com/shashanksist/shashank_sist/_apis/build/status/bhagatsajan0073.dominance-analysis?branchName=master)](https://dev.azure.com/shashanksist/shashank_sist/_build?definitionId=2)
 [![Build status](https://ci.appveyor.com/api/projects/status/t3w0hs7bhragnvbi?svg=true)](https://ci.appveyor.com/project/dominance-analysis/dominance-analysis)
 [![Documentation Status](https://readthedocs.org/projects/dominance-analysis/badge/?version=latest)](https://dominance-analysis.readthedocs.io/en/latest/?badge=latest)
 [![Maintainability](https://api.codeclimate.com/v1/badges/97a8614c71d05ef05a3e/maintainability)](https://codeclimate.com/github/dominance-analysis/dominance_analysis/maintainability) [![Join the chat at https://gitter.im/dominance_analysis/community](https://badges.gitter.im/dominance_analysis/community.svg)](https://gitter.im/dominance_analysis/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
