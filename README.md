@@ -2,13 +2,16 @@
 [![PyPI version](https://badge.fury.io/py/dominance-analysis.svg)](https://badge.fury.io/py/dominance-analysis)
 [![Downloads](https://pepy.tech/badge/dominance-analysis)](https://pepy.tech/project/dominance-analysis) 
 <a href="https://github.com/dominance-analysis/dominance_analysis/blob/master/LICENSE">
-  <img src="https://img.shields.io/github/license/dominance-analysis/dominance_analysis.svg">
+  <img src="https://img.shields.io/github/license/dominance-analysis/dominance-analysis.svg">
 </a>
-<a href="https://github.com/dominance-analysis/dominance_analysis/stargazers">
-  <img src="https://img.shields.io/github/stars/dominance-analysis/dominance_analysis.svg">
+<a href="https://github.com/dominance-analysis/dominance-analysis/stargazers">
+  <img src="https://img.shields.io/github/stars/dominance-analysis/dominance-analysis.svg">
 </a>
-<a href="https://github.com/dominance-analysis/dominance_analysis/network/members">
-  <img src="https://img.shields.io/github/forks/dominance-analysis/dominance_analysis.svg">
+<a href="https://github.com/dominance-analysis/dominance-analysis/network/members">
+  <img src="https://img.shields.io/github/forks/dominance-analysis/dominance-analysis.svg">
+</a>
+<a href="https://github.com/dominance-analysis/dominance-analysis/issues">
+  <img src="https://img.shields.io/github/issues/dominance-analysis/dominance-analysis.svg">
 </a>
 [![Build Status](https://travis-ci.org/dominance-analysis/dominance-analysis.svg?branch=master)](https://travis-ci.org/dominance-analysis/dominance-analysis)
 [![Build Status](https://dev.azure.com/dominanceanalysis/dominance-analysis/_apis/build/status/dominance-analysis.dominance-analysis?branchName=master)](https://dev.azure.com/dominanceanalysis/dominance-analysis/_build/latest?definitionId=1&branchName=master)
