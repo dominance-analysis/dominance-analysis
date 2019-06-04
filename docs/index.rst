@@ -6,7 +6,7 @@
 Welcome to Dominance-Analysis documentation!
 ################################################
 
-|pypi package|  |downloads|  |license|  |stars|  |forks|  |build-status|  |azure|  |build|  |docs|  |maintainability|  |chat|
+|pypi package|  |downloads|  |license|  |stars|  |forks|  |issues|   |build-status|  |azure|  |build|  |docs|  |maintainability|  |chat|
 
 .. |pypi package| image:: https://badge.fury.io/py/dominance-analysis.svg
     :alt: Test coverage
@@ -18,20 +18,26 @@ Welcome to Dominance-Analysis documentation!
     :scale: 100%
     :target: https://pepy.tech/project/dominance-analysis
     
-.. |license| image:: https://img.shields.io/github/license/bhagatsajan0073/dominance_analysis.svg
+.. |license| image:: https://img.shields.io/github/license/dominance-analysis/dominance-analysis.svg
     :alt: Test coverage
     :scale: 100%
     :target: https://github.com/dominance-analysis/dominance_analysis/blob/master/LICENSE
 	
-.. |stars| image:: https://img.shields.io/github/stars/bhagatsajan0073/dominance_analysis.svg
+.. |stars| image:: https://img.shields.io/github/stars/dominance-analysis/dominance-analysis.svg
     :alt: Test coverage
     :scale: 100%
-    :target: https://github.com/dominance-analysis/dominance_analysis/stargazers
-	
-.. |forks| image:: https://img.shields.io/github/forks/bhagatsajan0073/dominance_analysis.svg
+    :target: https://github.com/dominance-analysis/dominance-analysis/stargazers 
+    	
+.. |forks| image:: https://img.shields.io/github/forks/dominance-analysis/dominance-analysis.svg
     :alt: Test coverage
     :scale: 100%
-    :target: https://github.com/dominance-analysis/dominance_analysis/network/members
+    :target: https://github.com/dominance-analysis/dominance-analysis/network/members
+    
+.. |issues| image:: https://img.shields.io/github/issues/dominance-analysis/dominance-analysis.svg
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://github.com/dominance-analysis/dominance-analysis/issues     
+   
     
 .. |build-status| image:: https://img.shields.io/travis/rtfd/readthedocs.org.svg?style=flat
     :alt: build status
@@ -53,10 +59,10 @@ Welcome to Dominance-Analysis documentation!
     :scale: 100%
     :target: https://ci.appveyor.com/project/dominance-analysis/dominance-analysis
     
-.. |maintainability| image:: https://api.codeclimate.com/v1/badges/97a8614c71d05ef05a3e/maintainability
+.. |maintainability| image:: https://api.codeclimate.com/v1/badges/6bb5585a19b168e5a425/maintainability
     :alt: Test coverage
     :scale: 100%
-    :target: https://codeclimate.com/github/dominance-analysis/dominance_analysis/maintainability
+    :target: https://codeclimate.com/github/dominance-analysis/dominance-analysis/maintainability
     
 .. |chat| image:: https://badges.gitter.im/dominance_analysis/community.svg
     :alt: Test coverage
