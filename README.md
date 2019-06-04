@@ -12,7 +12,7 @@
 </a>
 [![Build Status](https://travis-ci.org/dominance-analysis/dominance-analysis.svg?branch=master)](https://travis-ci.org/dominance-analysis/dominance-analysis)
 [![Build Status](https://dev.azure.com/dominanceanalysis/dominance-analysis/_apis/build/status/dominance-analysis.dominance-analysis?branchName=master)](https://dev.azure.com/dominanceanalysis/dominance-analysis/_build/latest?definitionId=1&branchName=master)
-[![Build status](https://ci.appveyor.com/api/projects/status/t3w0hs7bhragnvbi?svg=true)](https://ci.appveyor.com/project/dominance-analysis/dominance-analysis)
+[![Build status](https://ci.appveyor.com/api/projects/status/fqly6m0p7kuocic1?svg=true)](https://ci.appveyor.com/project/dominance-analysis/dominance-analysis)
 [![Documentation Status](https://readthedocs.org/projects/dominance-analysis/badge/?version=latest)](https://dominance-analysis.readthedocs.io/en/latest/?badge=latest)
 [![Maintainability](https://api.codeclimate.com/v1/badges/97a8614c71d05ef05a3e/maintainability)](https://codeclimate.com/github/dominance-analysis/dominance_analysis/maintainability) [![Join the chat at https://gitter.im/dominance_analysis/community](https://badges.gitter.im/dominance_analysis/community.svg)](https://gitter.im/dominance_analysis/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
