@@ -43,12 +43,12 @@ Welcome to Dominance-Analysis documentation!
     :scale: 100%
     :target: https://dominance-analysis.readthedocs.io/en/latest/?badge=latest
     
-.. |azure| image:: https://dev.azure.com/shashanksist/shashank_sist/_apis/build/status/bhagatsajan0073.dominance-analysis?branchName=master
+.. |azure| image:: https://dev.azure.com/dominanceanalysis/dominance-analysis/_apis/build/status/dominance-analysis.dominance-analysis?branchName=master
     :alt: Test coverage
     :scale: 100%
-    :target: https://dev.azure.com/shashanksist/shashank_sist/_build?definitionId=2
+    :target: https://dev.azure.com/dominanceanalysis/dominance-analysis/_build/latest?definitionId=1&branchName=master
     
-.. |build| image:: https://ci.appveyor.com/api/projects/status/t3w0hs7bhragnvbi?svg=true
+.. |build| image:: https://ci.appveyor.com/api/projects/status/fqly6m0p7kuocic1?svg=true
     :alt: Test coverage
     :scale: 100%
     :target: https://ci.appveyor.com/project/dominance-analysis/dominance-analysis
