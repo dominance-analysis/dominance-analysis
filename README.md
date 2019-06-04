@@ -18,6 +18,9 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/fqly6m0p7kuocic1?svg=true)](https://ci.appveyor.com/project/dominance-analysis/dominance-analysis)
 [![Documentation Status](https://readthedocs.org/projects/dominance-analysis/badge/?version=latest)](https://dominance-analysis.readthedocs.io/en/latest/?badge=latest)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6bb5585a19b168e5a425/maintainability)](https://codeclimate.com/github/dominance-analysis/dominance-analysis/maintainability)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/badges/build.png?b=master)](https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/build-status/master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![Join the chat at https://gitter.im/dominance_analysis/community](https://badges.gitter.im/dominance_analysis/community.svg)](https://gitter.im/dominance_analysis/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 *This package is designed to determine relative importance of predictors for both regression and classification models. The determination of relative importance depends on how one defines importance; Budescu (1993) and Azen and Budescu (2003) proposed using dominance analysis (DA) because it invokes a general and intuitive definition of "relative importance" that is based on the additional contribution of a predictor in all subset models. The purpose of determining predictor importance in the context of DA is not model selection but rather uncovering the individual contributions of the predictors.*
