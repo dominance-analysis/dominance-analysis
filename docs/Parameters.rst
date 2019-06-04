@@ -90,4 +90,4 @@ You can find a more detailed information and examples regarding the package in t
 
 .. _UCI ML Breast Cancer Wisconsin (Diagnostic) dataset: https://goo.gl/U2Uwz2
 .. _Boston Housing Dataset dataset: https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html
-.. _Official Dominance Analysis Documentation: https://bhagatsajan0073.github.io/dominance-analysis/
+.. _Official Dominance Analysis Documentation: https://dominance-analysis.github.io/dominance-analysis/
