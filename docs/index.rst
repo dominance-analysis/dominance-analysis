@@ -6,7 +6,7 @@
 Welcome to Dominance-Analysis documentation!
 ################################################
 
-|pypi package|  |downloads|  |license|  |stars|  |forks|  |issues|   |build-status|  |azure|  |build|  |docs|  |maintainability|  |chat|
+|pypi package|  |downloads|  |license|  |stars|  |forks|  |issues|   |build-status|  |azure|  |build|  |docs|  |maintainability|   |Scrutinizer Code Quality|      |Build Status|     |Code Intelligence Status|    |chat|
 
 .. |pypi package| image:: https://badge.fury.io/py/dominance-analysis.svg
     :alt: Test coverage
@@ -63,6 +63,22 @@ Welcome to Dominance-Analysis documentation!
     :alt: Test coverage
     :scale: 100%
     :target: https://codeclimate.com/github/dominance-analysis/dominance-analysis/maintainability
+    
+.. |Scrutinizer Code Quality| image:: https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/badges/quality-score.png?b=master
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/?branch=master
+    
+.. |Build Status| image:: https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/badges/build.png?b=master
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/build-status/master
+    
+.. |Code Intelligence Status| image:: https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/badges/code-intelligence.svg?b=master
+    :alt: Test coverage
+    :scale: 100%
+    :target: https://scrutinizer-ci.com/code-intelligence
+    
     
 .. |chat| image:: https://badges.gitter.im/dominance_analysis/community.svg
     :alt: Test coverage
