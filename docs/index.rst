@@ -21,7 +21,7 @@ Welcome to Dominance-Analysis documentation!
 .. |license| image:: https://img.shields.io/github/license/dominance-analysis/dominance-analysis.svg
     :alt: Test coverage
     :scale: 100%
-    :target: https://github.com/dominance-analysis/dominance-analysis/blob/master/LICENSE
+    :target: https://github.com/dominance-analysis/dominance-analysis/blob/master/dominance_analysis/LICENSE
 	
 .. |stars| image:: https://img.shields.io/github/stars/dominance-analysis/dominance-analysis.svg
     :alt: Test coverage
