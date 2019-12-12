@@ -1,9 +1,7 @@
 # Dominance-Analysis : A Python Library for Accurate and Intuitive Relative Importance of Predictors 
 [![PyPI version](https://badge.fury.io/py/dominance-analysis.svg)](https://badge.fury.io/py/dominance-analysis)
 [![Downloads](https://pepy.tech/badge/dominance-analysis)](https://pepy.tech/project/dominance-analysis) 
-<a href="https://github.com/dominance-analysis/dominance-analysis/blob/master/LICENSE">
-  <img src="https://img.shields.io/github/license/dominance-analysis/dominance-analysis.svg">
-</a>
+<a href="https://github.com/dominance-analysis/dominance-analysis/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/dominance-analysis/dominance-analysis"></a>
 <a href="https://github.com/dominance-analysis/dominance-analysis/stargazers">
   <img src="https://img.shields.io/github/stars/dominance-analysis/dominance-analysis.svg">
 </a>
