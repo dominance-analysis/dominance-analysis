@@ -39,7 +39,7 @@ Welcome to Dominance-Analysis documentation!
     :target: https://github.com/dominance-analysis/dominance-analysis/issues     
    
     
-.. |build-status| image:: https://img.shields.io/travis/rtfd/readthedocs.org.svg?style=flat
+.. |build-status| image:: https://travis-ci.org/dominance-analysis/dominance-analysis.svg?branch=master
     :alt: build status
     :scale: 100%
     :target: https://travis-ci.org/dominance-analysis/dominance-analysis
