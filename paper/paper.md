@@ -132,11 +132,12 @@ Hence, this can be interpreted as the average impact that a predictor has when i
 
 In below table, we have illustrated the calculation used to arrive at the four measures of dominance.
 
-<img src='images/Dom Stat.jpg'>
+![Dominance Statistics\label{fig:dom_stats}](../images/Dom Stat.jpg)
 <p align="center"> Table 3</p>
 <br>
 If we calculate the four measures of dominance from the above example, we will get the following values:
 <img src='images/Dominance_Analysis.JPG'>
+![Dominance Analysis\label{fig:dominance_analysis}](../images/Dominance_Analysis.JPG)
 <p align="center"> Table 4</p>
 
 # Dominance Levels
