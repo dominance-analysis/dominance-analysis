@@ -33,9 +33,9 @@ bibliography: paper.bib
 ---
 # Summary
 
-This package is designed for ***Global Explainability*** of machine learning model in terms of relative importance of predictors for both regression and classification models. The determination of relative importance depends on how one defines importance; Budescu (1993) and Azen and Budescu (2003) proposed using dominance analysis (DA) because it invokes a general and intuitive definition of “relative importance” that is based on the additional contribution of a predictor in all subset models. The purpose of determining predictor importance in the context of DA is not model selection but rather uncovering the individual contributions of the predictors.
+This package is designed for ***Global Explainability*** of machine learning model in terms of relative importance of predictors for both regression and classification models. The determination of relative importance depends on how one defines importance; [@Azen and Budescu:2003] proposed using dominance analysis (DA) because it invokes a general and intuitive definition of “relative importance” that is based on the additional contribution of a predictor in all subset models. The purpose of determining predictor importance in the context of DA is not model selection but rather uncovering the individual contributions of the predictors.
 
-In case the target is a continuous variable, the package determines the dominance of one predictor over another by comparing their incremental R-squared contribution across all subset models. In case the target variable is binary, the package determines the dominance over another by comparing their incremental Pseudo R-Squared contribution across all subset models.
+In case the target is a continuous variable, the package determines the dominance of one predictor over another by comparing their incremental R<sup>2</sup> contribution across all subset models. In case the target variable is binary, the package determines the dominance over another by comparing their incremental Pseudo R<sup>2</sup> contribution across all subset models.
 
 # Dominance Analysis - The Significance!
 
@@ -49,9 +49,9 @@ in the context of all 2<sup>(p−2)</sup> models that contain some subset of the
 
 Let's consider a scenario when we have 4 predictors; X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub> and X<sub>4</sub>. We will have to build a total of 2<sup>4</sup>-1 models i.e. 15 models- <sup>4</sup>C<sub>1</sub> = 4 models with only one predictor, <sup>4</sup>C<sub>2</sub> = 6 models with two predictors each, <sup>4</sup>C<sub>3</sub> = 4 models with three predictors each and 1  (<sup>4</sup>C<sub>4</sub>) complete model with all 4 predictors. Thus, the additional contributions of X<sub>1</sub> are computed as the increases in the proportion of variance accounted for when X<sub>1</sub> is added to each subset of the remaining predictors (i.e., the null subset {.}, {X<sub>2</sub>}, {X<sub>3</sub>}, {X<sub>4</sub>}, {X<sub>2</sub>X<sub>3</sub>}, {X<sub>2</sub>X<sub>4</sub>}, {X<sub>3</sub>X<sub>4</sub>} and {X<sub>2</sub>X<sub>3</sub>X<sub>4</sub>}). Similarly, the additional contributions of X<sub>2</sub> are the increases in the proportion of variance accounted for when X<sub>2</sub> is added to each subset of the remaining predictors (i.e., the null subset {.}, {X<sub>1</sub>}, {X<sub>3</sub>}, {X<sub>4</sub>}, {X<sub>1</sub>X<sub>3</sub>}, {X<sub>1</sub>X<sub>4</sub>}, {X<sub>3</sub>X<sub>4</sub>} and {X<sub>1</sub>X<sub>3</sub>X<sub>4</sub>})
 
-Below is the illustration of formulas used to compute the averaged additional contributions of X<sub>1</sub> and X<sub>2</sub> within model size in the poupulation with four predictors (We use the notation <img src='images/formula1.JPG'> to represent the proportion of variance in Y that is accounted for by the predictors in the model X. For example,<img src='images/formula2.JPG'> represents the proportion of variance in Y that is accounted for by the model consisting of X<sub>1</sub> and X<sub>3</sub>. The additional contribution of a given predictor is measured by the increase in proportion of variance that results from adding that predictor to the regression model):
+Below is the illustration of formulas used to compute the averaged additional contributions of X<sub>1</sub> and X<sub>2</sub> within model size in the poupulation with four predictors (We use the notation ![../images/formula2.JPG](../images/formula1.JPG) to represent the proportion of variance in Y that is accounted for by the predictors in the model X. For example,![../images/formula2.JPG](../images/formula2.JPG) represents the proportion of variance in Y that is accounted for by the model consisting of X<sub>1</sub> and X<sub>3</sub>. The additional contribution of a given predictor is measured by the increase in proportion of variance that results from adding that predictor to the regression model):
 
-<img src='images/formulas.JPG'> 
+![Table 1\label{figure:formulas}](../images/formulas.JPG)
 <p align="center"> Table 1</p>
 
 
@@ -60,7 +60,7 @@ The measure for proportion of variance that we have used for regression is R<sup
 
 The beauty of the math of Dominance Analysis is that the sum of the  overall average incremental R<sup>2</sup> of all predictors is equal to the R<sup>2</sup> of the complete model (model with all predictors). Hence, the total R<sup>2</sup> can be attributed to each predictor in the model. Below is an illustration of Dominance Analysis in the Population for Hypothetical example with four predictors:
 
-<img src='images/PercentRel.jpg'>
+![Table 2\label:{fig:PercentRel}](../images/PercentRel.jpg)
 <p align="center"> Table 2</p>
 
 It can bee seen that the Percentage Relative Importance of predictors has been computed by dividing the Overall Average Incremental R<sup>2</sup> contribution of predictors by the R<sup>2</sup> of the complete model. This explains the intuitive nature of Dominance Analysis wherein the overall R<sup>2</sup> of the model can be attributed to individual predictors within the model.
@@ -142,6 +142,7 @@ If we calculate the four measures of dominance from the above example, we will g
 # Dominance Levels
 
 The following three levels of dominance can be achieved between each pair of predictors in Dominance Analysis: 
+
 * **Complete Dominance** - One predictor is said to completely dominate another predictor if its dominance holds across all possible subset models (that do not include the two predictors under comparison). Back to the four-predictor model, for example, complete dominance of X<sub>1</sub> over X<sub>2</sub> is achieved if the additional R<sup>2</sup> contribution of X<sub>1</sub> is more than that of X<sub>2</sub> to the null model, the model consisting of X<sub>3</sub>, the model consisting of X<sub>4</sub>, and the model consisting of both X<sub>3</sub> and X<sub>4</sub>. In Table 3, we can see that incremental R<sup>2</sup> of X<sub>1</sub> is greater than that of X<sub>2</sub> for all subset models and hence X<sub>1</sub> completely dominates X<sub>2</sub>.
 <br> If the additional contributions are inconsistent in favoring the same predictor across all subset models, then complete dominance is undetermined while weaker levels of dominance may still be achieved. 
 * **Conditional Dominance** - If a predictor’s averaged additional contribution within each model size is greater than that of another predictor, then the first predictor is said to conditionally dominate the latter. Here, the model size is indicated by the number of predictors included in a given model. If a predictor’s averaged additional contribution is greater for some model sizes but not for all, then conditional dominance between the two predictors cannot be established.
@@ -149,32 +150,6 @@ The following three levels of dominance can be achieved between each pair of pre
 
 The three levels of dominance (complete, conditional,and general) are related to each other in a hierarchical fashion: Complete dominance implies conditional dominance, which, in turn, implies general dominance. However, for p > 3 the converse may not
 hold; that is, general dominance does not imply conditional dominance and conditional dominance does not necessarily imply complete dominance.
-
-# Citations
-
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-If you want to cite a software repository URL (e.g. something on GitHub without a preferred
-citation) then you can do it with the example BibTeX entry below for @fidgit.
-
-For a quick reference, the following citation commands can be used:
-- `@author:2001`  ->  "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
-
-# Figures
-
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
-
-Fenced code blocks are rendered with syntax highlighting:
-```python
-for n in range(10):
-    yield f(n)
-```	
 
 # Acknowledgements
 
