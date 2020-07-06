@@ -37,12 +37,14 @@ This package is designed for ***Global Explainability*** of machine learning mod
 
 In case the target is a continuous variable, the package determines the dominance of one predictor over another by comparing their incremental R<sup>2</sup> contribution across all subset models. In case the target variable is binary, the package determines the dominance over another by comparing their incremental Pseudo R<sup>2</sup> contribution across all subset models.
 
-# Dominance Analysis - The Significance!
+# Backgroud 
+
+### Dominance Analysis - The Significance!
 
 Dominance Analysis, according to Azen and Budescu meets three important criteria for measuring relative importance. First, the technique should be defined in terms of its ability to reduce error in predicting the outcome variable. Next, it should permit direct comparison of measures within a model (that is, X<sub>1</sub> is twice as important as X<sub>2</sub>). Finally, the technique should permit inferences concerning an attribute's direct effect (that is, when considered by itself), total effect (that is, when considered with other attributes) and partial effect (that is, when considered with various combinations of other predictors). Hence, Dominance analysis is both robust and intuitive and its interpretation is also very straightforward.
 
 
-# Dominance Analysis - The Math!
+### Dominance Analysis - The Math!
 
 Dominance Analysis is unique as it measures relative importance in a pairwise fashion, and the two predictors are compared
 in the context of all 2<sup>(p−2)</sup> models that contain some subset of the other predictors. So, if we have a total of 'p' predictors, we will build 2<sup>p</sup>-1 models (all possible subset models) and compute the incremental R<sup>2</sup> contribution of each predictor to the subset model of all other predictors. The additional contribution of a given predictor is measured by the increase in R<sup>2</sup> that results from adding that predictor to the regression model.
@@ -65,7 +67,7 @@ The beauty of the math of Dominance Analysis is that the sum of the  overall ave
 
 It can bee seen that the Percentage Relative Importance of predictors has been computed by dividing the Overall Average Incremental R<sup>2</sup> contribution of predictors by the R<sup>2</sup> of the complete model. This explains the intuitive nature of Dominance Analysis wherein the overall R<sup>2</sup> of the model can be attributed to individual predictors within the model.
 
-# Pseudo R-Squared for Classification Task / Logistic Regression
+### Pseudo R-Squared for Classification Task / Logistic Regression
 
 Measures of fit in logistic regression can be classified by those based on sums of squares and those based on maximum likelihood statistics. Reviews of a variety of measures of fit proposed for logistic regression can be found in Amemiya (1981), Menard (2000), Mittlbock and Schemper (1996) and Zheng and Agresti (2000). Given the large number of proposed measures, criteria for defining appropriate R<sup>2</sup> analogues need to he determined. The following criteria, which are also found in the linear regression literature (e.g., Kvilseth. 1985: Van den Burg & Lewis, 1988), were used to select R<sup>2</sup> analogues for logistic regression:
 1. Boundedness: The measure should vary between a minimum of zero, indicating complete lack of fit, and a maximum of one, indicating perfect fit. 
@@ -113,7 +115,7 @@ Note: Since, Dominance Analysis is computationally intensive as it builds all su
 
 <hr>
 
-# Dominance Statistics
+### Dominance Statistics
 
 As described earlier, a relative importance measure should be able to describe a predictor's direct, total and partial effect, therefore in the Dominance Statistics, we have come up with four different types of Dominance measures. **These measures have been conceptualized, defined and formulated by us and are unique to this library**. Below are the definitions and interpretations of the measures:
 
@@ -140,7 +142,7 @@ If we calculate the four measures of dominance from the above example, we will g
 ![Dominance Analysis\label{fig:dominance_analysis}](../images/Dominance_Analysis.JPG)
 <p align="center"> Table 4</p>
 
-# Dominance Levels
+### Dominance Levels
 
 The following three levels of dominance can be achieved between each pair of predictors in Dominance Analysis: 
 
