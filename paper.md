@@ -1,5 +1,5 @@
 ---
-title: 'Dominance-Analysis : A Python Library for Accurate and Intuitive Relative Importance of Predictors'
+title: 'Dominance-Analysis : A Python Library for Global Explainability of Predictors'
 tags:
   - Python
   - Dominance Analysis
@@ -27,7 +27,7 @@ affiliations:
    index: 3
  - name: Assistant Manager, Latent View Analytics
    index: 4
-date: 13 August 2017
+date: 17 July 2020
 bibliography: paper.bib
 
 ---
