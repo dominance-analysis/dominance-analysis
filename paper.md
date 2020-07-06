@@ -1,5 +1,5 @@
 ---
-title: 'Dominance-Analysis : A Python Library for Global Explainability of Predictors'
+title: 'Dominance-Analysis : A Python Library for Global Explainability of Machine Learning Models'
 tags:
   - Python
   - Dominance Analysis
@@ -33,7 +33,7 @@ bibliography: paper.bib
 ---
 # Summary
 
-This package is designed to determine relative importance of predictors for both regression and classification models. The determination of relative importance depends on how one defines importance; Budescu (1993) and Azen and Budescu (2003) proposed using dominance analysis (DA) because it invokes a general and intuitive definition of “relative importance” that is based on the additional contribution of a predictor in all subset models. The purpose of determining predictor importance in the context of DA is not model selection but rather uncovering the individual contributions of the predictors.
+This package is designed for ***Global Explainability*** of machine learning model in terms of relative importance of predictors for both regression and classification models. The determination of relative importance depends on how one defines importance; Budescu (1993) and Azen and Budescu (2003) proposed using dominance analysis (DA) because it invokes a general and intuitive definition of “relative importance” that is based on the additional contribution of a predictor in all subset models. The purpose of determining predictor importance in the context of DA is not model selection but rather uncovering the individual contributions of the predictors.
 
 In case the target is a continuous variable, the package determines the dominance of one predictor over another by comparing their incremental R-squared contribution across all subset models. In case the target variable is binary, the package determines the dominance over another by comparing their incremental Pseudo R-Squared contribution across all subset models.
 
