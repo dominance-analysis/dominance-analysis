@@ -10,24 +10,17 @@ tags:
   - Shapley Value 
 authors:
   - name:  Shashank Shekhar
-    orcid: 
+    orcid: 0000-0003-3661-666X
     affiliation: 1 # (Multiple affiliations must be quoted)
   - name: Kunjithapatham Sivakumar
-    affiliation: 2
+    affiliation: 1
   - name: Sajan Kumar Bhagat
-    affiliation: 3
-  - name:  Bala Koteshwar Kolluri
-    affiliation: 4
+    affiliation: 1
 affiliations:
- - name: Head of Advanced Analytics, Subex Limited
+ - name: Subex Limited
    index: 1
- - name: Associate Director Advanced Analytics, Subex Limited
-   index: 2
- - name: Senior Data Scientist, Subex Limited
-   index: 3
- - name: Assistant Manager, Latent View Analytics
-   index: 4
-date: 17 July 2020
+   
+date: 17 June 2021
 bibliography: paper.bib
 
 ---
