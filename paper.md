@@ -20,7 +20,6 @@ tags:
   - psuedo-r-square
 authors:
   - name: Shashank Shekhar^[Corresponding author] # note this makes a footnote saying 'Co-first author'
-    orcid: 0000-0000-0000-0000
     affiliation: 1 
   - name: Sajan Bhagat # note this makes a footnote saying 'Co-first author'
     affiliation: 2
