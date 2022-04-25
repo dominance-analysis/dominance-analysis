@@ -80,13 +80,13 @@ Let's consider a scenario where we have 4 predictors; $X_1$, $X_2$, $X_3$ and $X
 
 The \autoref{fig:formulas} is the illustration of formulas used to compute the averaged additional contributions of $X_1$ and $X_2$ within model size in the population with four predictors (we use the notation $\rho^2_{Y.X}$ to represent the proportion of variance in $Y$ that is accounted for by the predictors in the model $X$. For example, $\rho^2_{Y.X_1X_3}$ represents the proportion of variance in $Y$ that is accounted for by the model consisting of $X_1$ and $X_3$. The additional contribution of a given predictor is measured by the increase in the proportion of variance that results from adding that predictor to the regression model):
 
-![\label{fig:formulas}](figures/formulas.jpg)
+![\label{fig:formulas}](images/formulas.JPG)
 
 The measure for the proportion of variance that we have used for regression is $R^2$ but since we don't have $R^2$ in logistic regression/classification models, we have used pseudo $R^2$.
 
 The beauty of the math of Dominance Analysis is that the sum of the overall average incremental $R^2$ of all predictors is equal to the $R^2$ of the complete model (model with all predictors). Hence, the total $R^2$ can be attributed to each predictor in the model. The \autoref{fig:PercentRel} is an illustration of Dominance Analysis in the population for hypothetical example with four predictors:
 
-![\label{fig:PercentRel}](figures/PercentRel.jpg)
+![\label{fig:PercentRel}](images/PercentRel.jpg)
 
 It can bee seen that the percentage relative importance of predictors has been computed by dividing the overall average incremental $R^2$ contribution of predictors by the $R^2$ of the complete model. This explains the intuitive nature of Dominance Analysis wherein the overall $R^2$ of the model can be attributed to individual predictors within the model.
 
@@ -106,11 +106,11 @@ To intuitively determine the dominance of one predictor over another, Dominance 
 
 The following figure is an example explaining how each of these measures of dominance is arrived at.
 
-![\label{fig:DomStat}](figures/DomStat.jpg)
+![\label{fig:DomStat}](images/Dom Stat.jpg)
 
 The measures of dominance calculated for these predictors can be seen in figure given below.
 
-![\label{fig:DominanceAnalysis}](figures/DominanceAnalysis.jpg)
+![\label{fig:DominanceAnalysis}](images/Dominance_Analysis.JPG)
 
 Dominance Levels
 =============================================
