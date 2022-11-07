@@ -12,7 +12,7 @@ from plotly.offline import init_notebook_mode,iplot
 import cufflinks as cf
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import log_loss
-from scipy.misc import factorial
+from scipy.special import factorial
 import statsmodels.api as sm
 from functools import  reduce
 import math
