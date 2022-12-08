@@ -101,7 +101,7 @@ Contents
    Installation and User Guide <Parameters>
    Examples <https://github.com/dominance-analysis/dominance-analysis/tree/master/examples>
 
-The package is currently compatible with Python 2.7, 3.5 and 3.6.
+The package is currently compatible with Python 3.7, 3.8, 3.9 and 3.10.
 
 You can find out more regarding the package in the `Official Dominance Analysis Documentation`_.
 
