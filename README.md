@@ -20,6 +20,7 @@
 [![Build Status](https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/badges/build.png?b=master)](https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/build-status/master)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/dominance-analysis/dominance-analysis/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![Join the chat at https://gitter.im/dominance_analysis/community](https://badges.gitter.im/dominance_analysis/community.svg)](https://gitter.im/dominance_analysis/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/6769/badge)](https://bestpractices.coreinfrastructure.org/projects/6769)
 
 *This package is designed to determine relative importance of predictors for both regression and classification models. The determination of relative importance depends on how one defines importance; Budescu (1993) and Azen and Budescu (2003) proposed using dominance analysis (DA) because it invokes a general and intuitive definition of "relative importance" that is based on the additional contribution of a predictor in all subset models. The purpose of determining predictor importance in the context of DA is not model selection but rather uncovering the individual contributions of the predictors.*
 
