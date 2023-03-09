@@ -2,8 +2,6 @@ import numpy as np
 from itertools import combinations
 import sklearn
 from sklearn.linear_model import LinearRegression
-from sklearn.datasets import load_breast_cancer
-from sklearn.datasets import load_boston
 from tqdm import tqdm
 from sklearn.feature_selection import SelectKBest,chi2,f_regression,f_classif
 import pandas as pd
