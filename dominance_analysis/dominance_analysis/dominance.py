@@ -274,7 +274,7 @@ class Dominance:
 		df_net = pd.DataFrame.from_records([(net, net, 0, net)],
 			columns=['Percentage Relative Importance', 'running_total', 'y_start', 'label_pos'],index=["net"])
 		
-		df = df.append(df_net)
+		df = pd.concat([df, df_net], axis=0, join='outer')
 
 		df['color'] = '#1de9b6'
 		df.loc[df['Percentage Relative Importance'] == 100, 'color'] = '#29b6f6'
